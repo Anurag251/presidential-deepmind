@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap')
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+  border: none
+  background: none
+  text-decoration: none
+  list-style: none
+  font-family: 'Nunito', sans-serif
+
+$main: #f48120
+$pri: #2e3191
+$sec: #fbb016
+$bg: #f9f9ff
+$title: #373737
+$light: #ffffff
+$dark: #000000
+$para: #484848
+
+@mixin flex($justify)
+  display: flex
+  justify-content: $justify
+  align-items: center
+
+@mixin grid($column)
+  display: grid
+  grid-template-columns: $column
+  grid-gap: 20px
+
+@mixin dark($opacity)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba($dark, $opacity)
+
+@mixin image
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+@mixin trans()
+  transition: 0.4s ease-in-out
+
+@mixin button($color)
+  padding: 0.5rem 1rem
+  background-color: $light
+  color: $light
+  border: 1px solid $color
+  box-shadow: 0 0 0 3em $color inset
+  @include trans()
+  cursor: pointer
+
+  &:hover
+    background-color: $light
+    box-shadow: 0 0 0 0em $color inset
+    color: $color
+
+section
+  padding: 4rem 0
+
+  &.bg
+    background-color: #F9F9FF
+
+.title
+  text-align: center
+  margin-bottom: 2rem
+  h4
+    text-transform: uppercase
+    color: $pri
+    letter-spacing: 1.5px
+    font-style: normal
+    font-weight: 600
+    line-height: 33px
+    letter-spacing: 0.135em
+
+  h2
+    font-style: normal
+    font-weight: bold
+    line-height: 40px
+    text-transform: uppercase
+
+.wrapper
+  max-width: 1300px
+  margin: 0 auto
+  padding: 0 20px
+
+h1
+  font-size: 40px
+
+h2
+  font-size: 30px
+
+h3
+  font-size: 24px
+
+h4
+  font-size: 18px
+
+h5
+  font-size: 14px
+
+/*********************      header      ***********************/
+header
+  background-color: $light
+  .wrapper
+    .top-sec
+      padding: 1rem 0
+      @include grid($column: 1fr 1.5fr 1fr)
+
+      .stay-connected
+        h3
+          color: $pri
+          margin-bottom: 6px
+
+        .icons
+          @include flex($justify: flex-start)
+
+          .icon
+            margin-right: 1.5rem
+            color: $main
+
+      .logo
+        @include flex($justify: center)
+
+        img
+          width: 100%
+
+      .login
+        @include flex($justify: flex-end)
+
+        button
+          @include button($color: $pri)
+          border-radius: 4px
+          font-size: 18px
+          padding: .5rem 1.5rem
+
+  .nav-sec
+    padding: 1rem 0
+    background-color: $dark
+
+    ul
+      @include flex($justify: flex-start)
+      li
+        margin-right: 2rem
+        color: $light
+        font-size: 18px
+        @include flex($justify: center)
+        letter-spacing: 1.3px
+        cursor: pointer
+
+        i
+          font-size: 13px
+          margin-left: 7px
+
+        a
+          color: $light
+
+/*********************      banner      ***********************/
+.banner
+  .swiper-slide
+    height: 80vh
+    width: 100%
+    @include flex($justify: flex-start)
+    @include image
+
+    &::after
+      content: ''
+      @include dark($opacity: .41)
+      z-index: 1
+
+    .wrapper
+      width: 100%
+      position: relative
+      z-index: 2
+      color: $light
+
+      .content
+        h4
+          font-weight: 400
+          letter-spacing: 1.4px
+
+        h1
+          max-width: 500px
+
+        p
+          font-weight: 300
+          max-width: 520px
+          margin: 1rem 0
+
+        button
+          @include button($color: $main)
+
+/*********************      about      ***********************/
+.about
+  @include grid($column: 1fr 2fr)
+
+  .image
+    height: 350px
+    width: 100%
+
+    .img
+      @include image()
+      width: 100%
+      height: 100%
+
+  .details
+    .name
+      color: $pri
+      margin-bottom: 1rem
+
+    p
+      font-size: 18px
+      line-height: 33px
+      color: $para
+      margin-bottom: 2rem
+      text-align: justify
+
+    button
+      @include button($color: $main)
+      text-transform: uppercase
+
+/*********************      cources      ***********************/
+.linear-bg
+  background: linear-gradient(93.04deg, rgba(46, 49, 145, 0.7) 0%, rgba(244, 129, 32, 0.7) 100%)
+
+.cources
+  @include flex($justify: space-between)
+
+  .item
+    @include flex($justify: center)
+    flex-direction: column
+
+    .icon
+      height: 140px
+      width: 140px
+      margin-bottom: 1rem
+
+      img
+        width: 100%
+
+    .name
+      text-align: center
+      color: $light
+
+/*********************      our-popular-courses      ***********************/
+.our-popular-courses
+  .list
+    @include grid($column: 1fr 1fr 1fr 1fr)
+
+    .item
+      @include flex($justify: center)
+      flex-direction: column
+
+      .image
+        height: 230px
+        width: 230px
+
+        .img
+          width: 100%
+          height: 100%
+          @include image
+
+      .name
+        margin-top: 1rem
+        font-weight: 700
+
+/*********************      facilities      ***********************/
+.facilities
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+    margin-top: 8rem
+
+    .item
+      background-color: $pri
+      border-radius: 17px
+      box-shadow: 0px 4px 4px rgba($dark, 0.25)
+      height: 160px
+      width: 100%
+      position: relative
+      margin-bottom: 4rem
+      @include flex($justify: center)
+
+      .icon
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 120px
+        width: 120px
+        border-radius: 50%
+        background-color: $pri
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        @include flex($justify: center)
+
+        img
+          width: 50%
+
+      .name
+        color: $light
+        margin-top: 2.5rem
+
+/*********************      news-events      ***********************/
+.news-events
+  .switch-btn
+    @include flex($justify: center)
+    margin-bottom: 2rem
+
+    li
+      padding: .5rem 1.5rem
+      border-radius: 15px
+      background-color: #CBCBE3
+      color: $dark
+      margin: .5rem
+      font-weight: 600
+      cursor: pointer
+
+      &.active
+        color: $light
+        background-color: $pri
+
+  .list
+    @include grid($column: 1fr 1fr)
+
+    .item
+      position: relative
+
+      .image
+        height: 350px
+        width: 100%
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+
+      .details
+        position: absolute
+        left: 0
+        top: 0
+        max-width: 350px
+        width: 100%
+        background-color: rgba($dark, .55)
+        backdrop-filter: blur(4px)
+        padding: 1rem
+        color: $light
+
+        .date-time
+          @include flex($justify: flex-start)
+
+          .date
+            text-align: center
+
+            .day
+              font-size: 20px
+
+            .month
+              font-size: 14px
+              text-transform: uppercase
+              font-weight: 300
+
+          .line
+            height: 40px
+            width: 1px
+            background-color: $light
+            margin: 0 1rem
+
+          .time
+            .hrs
+              margin-bottom: 6px
+            .hrs, .loc
+              font-size: 14px
+              @include flex($justify: flex-start)
+              font-weight: 300
+
+              i
+                margin-right: 6px
+                font-size: 13px
+
+        .name
+          margin: 1rem 0 .6rem
+          font-weight: 500
+
+        p
+          font-size: 14px
+          font-weight: 300
+          margin-bottom: 1rem
+          line-height: 1.5rem
+          letter-spacing: 1px
+
+        button
+          @include button($color: $main)
+
+/*********************      testimonials      ***********************/
+.testimonials
+  .swiper-slide
+    margin-top: 6rem
+    transform: scale(.9)
+    @include trans()
+    padding: 1rem 0
+
+    &.swiper-slide-active
+      transform: scale(1.03)
+
+    .item
+      position: relative
+      background-color: $pri
+      color: $light
+      padding: 2rem
+      padding-top: 6rem
+      text-align: center
+      border-radius: 15px
+
+      .image
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, -50%)
+        height: 160px
+        width: 160px
+        @include image
+        border-radius: 50%
+        border: 6px solid $light
+        z-index: 2
+
+      .details
+        .name
+          font-style: normal
+          font-weight: 600
+          font-size: 30px
+          line-height: 49px
+          text-align: center
+
+        h4
+          font-weight: 400
+          margin-bottom: 2rem
+          font-style: normal
+          font-weight: normal
+          font-size: 24px
+          line-height: 33px
+          color: $sec
+
+        .desc
+          position: relative
+          padding: 2rem 0
+          p
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 145.4%
+            text-align: justify
+
+          .quet-start
+            position: absolute
+            top: 0
+            left: 0
+            height: 30px
+            width: 30px
+
+            img
+              width: 100%
+
+          .quet-end
+            position: absolute
+            right: 0
+            bottom: 0
+            height: 30px
+            width: 30px
+            transform: rotate(180deg)
+
+            img
+              width: 100%
