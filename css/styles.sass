@@ -44,11 +44,11 @@ $para: #484848
   background-repeat: no-repeat
 
 @mixin trans()
-  transition: 0.4s ease-in-out
+  transition: 0.45s cubic-bezier(0, 0, 0, 1),
 
 @mixin button($color)
   padding: 0.5rem 1rem
-  background-color: $light
+  background: none
   color: $light
   border: 1px solid $color
   box-shadow: 0 0 0 3em $color inset
@@ -56,9 +56,12 @@ $para: #484848
   cursor: pointer
 
   &:hover
-    background-color: $light
     box-shadow: 0 0 0 0em $color inset
     color: $color
+
+body
+  --swiper-theme-color: #2e3191
+  overflow-x: hidden
 
 section
   padding: 4rem 0
@@ -104,6 +107,160 @@ h4
 h5
   font-size: 14px
 
+.enquiry
+  position: absolute
+  right: -42px
+  top: 272px
+  z-index: 10
+  transform: rotate(-90deg)
+
+  button
+    @include button($color: $main)
+    padding: 0 2rem
+    text-transform: uppercase
+    font-size: 18px
+    height: 60px
+
+.side-email, .side-call
+  position: absolute
+  top: 165px
+  right: 0
+  z-index: 10
+  @include flex($justify: flex-start)
+  cursor: pointer
+  @include trans()
+
+  &:hover
+    right: 0
+
+  span
+    height: 60px
+    @include flex($justify: center)
+    padding: 0 1rem 0 0
+    background-color: $main
+    color: $light
+
+  .icon
+    height: 60px
+    width: 60px
+    background-color: $main
+    @include flex($justify: center)
+
+    img
+      width: 50%
+
+.side-call
+  top: 100px
+  right: -210px
+
+.side-email
+  right: -195px
+
+/*********************      enquiry-form-popup      ***********************/
+.background
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba($dark, .6)
+  z-index: 15
+  opacity: 0
+  pointer-events: none
+  @include trans()
+  cursor: none
+
+  .cursor-close
+    position: absolute
+    transform: translate(-50%, -50%)
+    color: #000
+    pointer-events: none
+    height: 50px
+    width: 50px
+    @include trans()
+
+    img
+      width: 100%
+
+  &.active
+    opacity: 1
+    pointer-events: auto
+
+.enquiry-form-popup
+  position: fixed
+  left: 96%
+  top: 50%
+  transform: translate(-50%, -50%) scale(.1)
+  background-color: $light
+  padding: 1.4rem 2rem
+  z-index: 20
+  border-radius: 15px
+  max-width: 450px
+  width: 100%
+  opacity: 0
+  pointer-events: none
+  @include trans()
+
+  &.active
+    left: 50%
+    transform: translate(-50%, -50%) scale(1)
+    opacity: 1
+    pointer-events: auto
+
+  .close-form
+    position: absolute
+    top: -35px
+    right: 0
+    height: 30px
+    width: 30px
+    background-color: $light
+    border-radius: 50%
+    @include flex($justify: center)
+    cursor: pointer
+    @include trans()
+
+    &:hover
+      transform: rotate(90deg)
+
+    img
+      width: 65%
+
+  .title
+    text-transform: uppercase
+    color: $pri
+    margin-bottom: 2rem
+
+    h3
+      font-weight: 600
+
+  .group
+    position: relative
+    border-radius: 15px
+    border: 1px solid #bfbfbf
+    margin-bottom: 1.5rem
+
+    label
+      position: absolute
+      top: 0
+      left: 15px
+      transform: translateY(-50%)
+      font-size: 12px
+      background-color: $light
+      padding: .2rem .7rem
+      color: $para
+      border-radius: 20px
+
+    input, select, textarea
+      padding: .7rem 1rem .5rem
+      width: 100%
+
+    textarea
+      height: 100px
+
+  button
+    @include button($color: $pri)
+    padding: .7rem 2rem
+
 /*********************      header      ***********************/
 header
   background-color: $light
@@ -140,18 +297,75 @@ header
           padding: .5rem 1.5rem
 
   .nav-sec
-    padding: 1rem 0
+    padding: .5rem 0
     background-color: $dark
 
-    ul
+    .nav
       @include flex($justify: flex-start)
+
       li
-        margin-right: 2rem
+        margin-right: 1rem
         color: $light
         font-size: 18px
         @include flex($justify: center)
         letter-spacing: 1.3px
         cursor: pointer
+        position: relative
+        border-radius: 15px
+        padding: 1rem
+
+        &:hover
+          background-color: rgba($light, .2)
+
+          .drop
+            top: 55px
+            opacity: 1
+            pointer-events: auto
+
+        .drop
+          position: absolute
+          left: 50%
+          top: 70px
+          transform: translateX(-50%)
+          background-color: $dark
+          padding: 1rem
+          z-index: 5
+          border-radius: 15px
+          text-align: left
+          box-shadow: 4px 4px 10px rgba($dark, .2)
+          pointer-events: none
+          opacity: 0
+          @include trans()
+
+          li
+            font-weight: 600
+            letter-spacing: 1.3px
+            margin-bottom: .5rem
+            width: 100%
+
+            &.more-dropdown
+              position: relative
+
+              &:hover
+                .drop-right
+                  left: 140px
+                  pointer-events: auto
+                  opacity: 1
+
+              .drop-right
+                position: absolute
+                left: 170px
+                top: -16px
+                background-color: $dark
+                padding: 1rem
+                z-index: 5
+                border-radius: 15px
+                opacity: 0
+                pointer-events: none
+                @include trans()
+
+            &:nth-last-child(1)
+              margin-bottom: 0
 
         i
           font-size: 13px
@@ -162,11 +376,31 @@ header
 
 /*********************      banner      ***********************/
 .banner
+  position: relative
+
   .swiper-slide
     height: 80vh
     width: 100%
     @include flex($justify: flex-start)
     @include image
+
+    &.swiper-slide-active
+      .wrapper
+        .content
+          h4
+            transform: translateY(0)
+            opacity: 1
+
+          h1
+            opacity: 1
+
+          p
+            opacity: 1
+            transform: translateY(0)
+
+          button
+            opacity: 1
+            transform: scale(1)
 
     &::after
       content: ''
@@ -184,24 +418,50 @@ header
           font-weight: 400
           letter-spacing: 1.4px
 
+          transform: translateY(-100px)
+          transition-delay: .6s !important
+          transition: .4s ease-in-out
+          opacity: 0
+
         h1
           max-width: 500px
+
+          opacity: 0
+          transition-delay: 1s !important
+          transition: .4s ease-in-out
 
         p
           font-weight: 300
           max-width: 520px
           margin: 1rem 0
 
+          transform: translateY(100px)
+          opacity: 0
+          transition-delay: 1.4s !important
+          transition: .4s ease-in-out
+
         button
           @include button($color: $main)
 
+          transform: scale(.5)
+          opacity: 0
+          transition-delay: 1.8s !important
+          transition: .4s ease-in-out
+
 /*********************      about      ***********************/
 .about
-  @include grid($column: 1fr 2fr)
+  @include grid($column: 1fr 1.5fr)
+
+  &:hover
+    .image
+      .img
+        transform: scale(1.1)
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
 
   .image
-    height: 350px
+    height: 100%
     width: 100%
+    overflow: hidden
 
     .img
       @include image()
@@ -256,14 +516,22 @@ header
       @include flex($justify: center)
       flex-direction: column
 
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+
       .image
         height: 230px
         width: 230px
+        border-radius: 50%
+        overflow: hidden
 
         .img
           width: 100%
           height: 100%
           @include image
+          @include trans()
 
       .name
         margin-top: 1rem
@@ -279,7 +547,7 @@ header
       background-color: $pri
       border-radius: 17px
       box-shadow: 0px 4px 4px rgba($dark, 0.25)
-      height: 160px
+      height: 200px
       width: 100%
       position: relative
       margin-bottom: 4rem
@@ -303,6 +571,7 @@ header
       .name
         color: $light
         margin-top: 2.5rem
+        font-size: 30px
 
 /*********************      news-events      ***********************/
 .news-events
@@ -329,9 +598,16 @@ header
     .item
       position: relative
 
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
       .image
         height: 350px
         width: 100%
+        overflow: hidden
 
         .img
           height: 100%
@@ -397,11 +673,16 @@ header
 
 /*********************      testimonials      ***********************/
 .testimonials
+  .swiper-pagination
+    .swiper-pagination-bullet
+      height: 12px
+      width: 12px
+
   .swiper-slide
     margin-top: 6rem
     transform: scale(.9)
     @include trans()
-    padding: 1rem 0
+    padding: 1rem 0 4rem
 
     &.swiper-slide-active
       transform: scale(1.03)
@@ -474,3 +755,147 @@ header
 
             img
               width: 100%
+
+/*********************      gallery      ***********************/
+.gallery
+  .swiper-pagination
+    .swiper-pagination-bullet
+      height: 12px
+      width: 12px
+
+  .swiper-wrapper
+    padding: 1rem 0 3rem
+
+  .swiper-slide
+    height: 300px
+    overflow: hidden
+
+    &:hover
+      .image
+        transform: scale(1.1)
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      height: 80%
+      width: 80%
+      background-color: rgba($dark, .3)
+      opacity: 0
+      backdrop-filter: blur(5px)
+      z-index: 1
+      @include trans()
+
+    &:hover
+      &:after
+        height: 100%
+        width: 100%
+        opacity: 1
+
+      .name
+        opacity: 1
+        top: 50%
+        transform: translate(-50%, -50%) scale(1)
+
+    .image
+      height: 100%
+      width: 100%
+      @include image
+
+    .name
+      position: absolute
+      left: 50%
+      top: 30%
+      transform: translate(-50%, -50%) scale(.8)
+      opacity: 0
+      font-size: 30px
+      color: $light
+      z-index: 2
+      @include trans()
+
+/*********************      our-location      ***********************/
+.our-location
+  .map
+    height: 700px
+    width: 100%
+
+    iframe
+      width: 100%
+      height: 100%
+
+/*********************      partner      ***********************/
+.partner
+  .mySwiper
+    margin-top: 5rem
+
+  .swiper-slide
+    @include flex($justify: center)
+
+    .image
+      height: 200px
+      width: 200px
+      @include flex($justify: center)
+
+      img
+        width: 100%
+
+/*********************      footer      ***********************/
+footer
+  background-color: $pri
+
+  .wrapper
+    padding: 4rem 20px
+
+  .copyright
+    background-color: #000245
+    padding: 2rem 0
+    font-size: 18px
+    text-align: center
+    color: $light
+
+  .list
+    @include grid($column: 1.5fr 1fr 1fr 1.5fr)
+
+    .item
+      color: $light
+
+      h2
+        margin-bottom: 2rem
+
+      ul
+        li
+          margin-bottom: 1rem
+          font-weight: 300
+          @include flex($justify: flex-start)
+
+          i
+            margin-right: 10px
+
+      .details
+        p
+          margin-bottom: 1rem
+
+        .group
+          position: relative
+
+          button
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            background-color: #4986FC
+            height: 100%
+            width: 60px
+            @include flex($justify: center)
+            cursor: pointer
+
+            img
+              width: 40%
+
+          input
+            width: 100%
+            background-color: $light
+            padding: .7rem
