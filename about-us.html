@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="index.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <li>Faculty</li>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <li>Faculty</li>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/page-banner.jpeg)"
+    >
+      <div class="page-title">
+        <h1>About Us</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> About
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- about-page-start -->
+    <div class="wrapper">
+      <div class="about-page">
+        <div class="image">
+          <div
+            class="img"
+            style="background-image: url(./images/img/about-page.jpg)"
+          ></div>
+        </div>
+        <div class="details">
+          <div class="title">
+            <h4>LEARN ANYTHING</h4>
+            <h2>WELCOME TO PRESIDENTIAL BUSINESS SCHOOL</h2>
+          </div>
+          <p>
+            Presidential Business School (PBS) is an academic institution
+            founded in 2011 AD, with the objective of establishing itself as a
+            model center for quality education in Nepal. PBS is affiliated to
+            Westcliff University, USA. Westcliff University is accredited by the
+            WASC Senior College and University Commission (WSCUC), a regional
+            accreditation body recognized by the U.S. Department of Education
+            (ED), the Council on Higher Education Accreditation (CHEA), a
+            private nonprofit national organization that coordinates
+            accreditation activity in the United States and Accreditation
+            Council for Business Schools and Programs (ACBSP), a standard of
+            excellence with an accreditation process based on the Baldrige
+            Education Criteria for Performance Excellence.
+          </p>
+          <h4>Our Vision</h4>
+          <p>
+            To be one of the best Academic Institution in South Asia. With our
+            effective method and technique, we want to provide you with the best
+            knowledge and experience for your future after PBS.
+          </p>
+          <h4>Our Mission</h4>
+          <ul>
+            <li>
+              To provide learning environment where individuals are inspired and
+              empowered to become responsible managers, entrepreneurs, leaders
+              and researchers in different management fields.
+            </li>
+            <li>
+              To enhance critical thinking and decision making skills of
+              students through practical, research based and innovative academic
+              programs.
+            </li>
+            <li>
+              To promote entrepreneurship through innovation and contribute in
+              nation’s development by creating employments.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- about-page-end -->
+
+    <!-- learning-approaches-start -->
+    <section>
+      <div class="wrapper">
+        <div class="learning-approaches">
+          <div class="title">
+            <h2>Learning Approaches</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/blackboard.svg" alt="" />
+              </div>
+              <div class="name">Class Partipation</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/group.svg" alt="" />
+              </div>
+              <div class="name">Group Discussion</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/group-work.svg" alt="" />
+              </div>
+              <div class="name">Pair/Group Work</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/thinking.svg" alt="" />
+              </div>
+              <div class="name">Quiz</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/paper-writing.svg" alt="" />
+              </div>
+              <div class="name">Term Paper Writing</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/lecture.svg" alt="" />
+              </div>
+              <div class="name">Guest Lectures</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/pie-chart.svg" alt="" />
+              </div>
+              <div class="name">Individual/Group Presentations</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/monitor.svg" alt="" />
+              </div>
+              <div class="name">Audio/Visual Tutorials</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/project.svg" alt="" />
+              </div>
+              <div class="name">Project/Research Work/Case Study</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/report.svg" alt="" />
+              </div>
+              <div class="name">Report Writing</div>
+            </div>
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/street-sign.svg" alt="" />
+              </div>
+              <div class="name">Fieldwork</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/maps-and-flags.svg" alt="" />
+              </div>
+              <div class="name">Internships at Corporate Houses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- learning-approaches-end -->
+
+    <!-- core-comperencies-start -->
+    <section>
+      <div class="wrapper">
+        <div class="core-comperencies">
+          <div class="title">
+            <h2>CORE COMPETENCIES</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/paper-writing.svg" alt="" />
+              </div>
+              <div class="name">Written & Oral Communication</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/medal.svg" alt="" />
+              </div>
+              <div class="name">Interpersonal Skills</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/thinking.svg" alt="" />
+              </div>
+              <div class="name">Critical Thinking</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/search.svg" alt="" />
+              </div>
+              <div class="name">Research and Analysis</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/book.svg" alt="" />
+              </div>
+              <div class="name">Information Literacy</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/ruler.svg" alt="" />
+              </div>
+              <div class="name">Quantitative Reasoning</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/project.svg" alt="" />
+              </div>
+              <div class="name">Reflective</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/rocket.svg" alt="" />
+              </div>
+              <div class="name">Innovation</div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="./images/icons/group.svg" alt="" />
+              </div>
+              <div class="name">Team Work and Leadership</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- core-comperencies-end -->
+
+    <!-- teams-start -->
+    <section class="bg">
+      <div class="wrapper">
+        <div class="teams">
+          <div class="title">
+            <h4>Teachers</h4>
+            <h2>Our Teams</h2>
+          </div>
+
+          <div class="list">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="background-image: url(./images/img/profile.jpeg)"
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Monkey King</div>
+                      <div class="info">Developer</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="
+                          background-image: url(./images/img/profile1.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Cristal Median</div>
+                      <div class="info">Review</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="
+                          background-image: url(./images/img/profile2.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Medusa</div>
+                      <div class="info">Manager</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="
+                          background-image: url(./images/img/profile3.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Panthom Assassin</div>
+                      <div class="info">CEO</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="
+                          background-image: url(./images/img/profile4.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Lina</div>
+                      <div class="info">Designer</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image">
+                      <div
+                        class="img"
+                        style="
+                          background-image: url(./images/img/profile5.jpeg);
+                        "
+                      ></div>
+                    </div>
+                    <div class="details">
+                      <div class="name">Outworld Devourer</div>
+                      <div class="info">UI/UX</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- teams-end -->
+
+    <!-- testimonials-start -->
+    <section>
+      <div class="wrapper">
+        <div class="testimonials">
+          <div class="title">
+            <h4>TESTIMONIALS</h4>
+            <h2>Our Successful Students</h2>
+          </div>
+
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/img/profile1.jpeg)"
+                  ></div>
+                  <div class="details">
+                    <h3 class="name">Naruto Uzumaki</h3>
+                    <h4>Management</h4>
+
+                    <div class="desc">
+                      <div class="quet-start">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        It has been an absolutely amazing learning experience at
+                        Presidential Business School. The college has been
+                        providing knowledge integrated with practical
+                        applicability. I personally think that the best part of
+                        learning at PBS is the course design that is planned to
+                        enhance knowledge. Moreover, the faculty members are
+                        very co-operative and supportive towards students to
+                        give best possible outcomes and solutions to their
+                        quests and queries. Most importantly, I think PBS makes
+                        researchers out of their students.
+                      </p>
+                      <div class="quet-end">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/img/profile2.jpeg)"
+                  ></div>
+                  <div class="details">
+                    <h3 class="name">Naruto Uzumaki</h3>
+                    <h4>Management</h4>
+
+                    <div class="desc">
+                      <div class="quet-start">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        It has been an absolutely amazing learning experience at
+                        Presidential Business School. The college has been
+                        providing knowledge integrated with practical
+                        applicability. I personally think that the best part of
+                        learning at PBS is the course design that is planned to
+                        enhance knowledge. Moreover, the faculty members are
+                        very co-operative and supportive towards students to
+                        give best possible outcomes and solutions to their
+                        quests and queries. Most importantly, I think PBS makes
+                        researchers out of their students.
+                      </p>
+                      <div class="quet-end">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/img/profile3.jpeg)"
+                  ></div>
+                  <div class="details">
+                    <h3 class="name">Naruto Uzumaki</h3>
+                    <h4>Management</h4>
+
+                    <div class="desc">
+                      <div class="quet-start">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        It has been an absolutely amazing learning experience at
+                        Presidential Business School. The college has been
+                        providing knowledge integrated with practical
+                        applicability. I personally think that the best part of
+                        learning at PBS is the course design that is planned to
+                        enhance knowledge. Moreover, the faculty members are
+                        very co-operative and supportive towards students to
+                        give best possible outcomes and solutions to their
+                        quests and queries. Most importantly, I think PBS makes
+                        researchers out of their students.
+                      </p>
+                      <div class="quet-end">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/img/profile.jpeg)"
+                  ></div>
+                  <div class="details">
+                    <h3 class="name">Naruto Uzumaki</h3>
+                    <h4>Management</h4>
+
+                    <div class="desc">
+                      <div class="quet-start">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        It has been an absolutely amazing learning experience at
+                        Presidential Business School. The college has been
+                        providing knowledge integrated with practical
+                        applicability. I personally think that the best part of
+                        learning at PBS is the course design that is planned to
+                        enhance knowledge. Moreover, the faculty members are
+                        very co-operative and supportive towards students to
+                        give best possible outcomes and solutions to their
+                        quests and queries. Most importantly, I think PBS makes
+                        researchers out of their students.
+                      </p>
+                      <div class="quet-end">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="item">
+                  <div
+                    class="image"
+                    style="background-image: url(./images/img/profile4.jpeg)"
+                  ></div>
+                  <div class="details">
+                    <h3 class="name">Naruto Uzumaki</h3>
+                    <h4>Management</h4>
+
+                    <div class="desc">
+                      <div class="quet-start">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                      <p>
+                        It has been an absolutely amazing learning experience at
+                        Presidential Business School. The college has been
+                        providing knowledge integrated with practical
+                        applicability. I personally think that the best part of
+                        learning at PBS is the course design that is planned to
+                        enhance knowledge. Moreover, the faculty members are
+                        very co-operative and supportive towards students to
+                        give best possible outcomes and solutions to their
+                        quests and queries. Most importantly, I think PBS makes
+                        researchers out of their students.
+                      </p>
+                      <div class="quet-end">
+                        <img
+                          src="./images/icons/bx_bxs-quote-alt-left.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+
+    <!-- swiper -->
+    <script src="./js/swiper.min.js"></script>
+
+    <script>
+      // teams
+      var swiper = new Swiper('.teams .mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+      // testimonials
+      var swiper = new Swiper('.testimonials .mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

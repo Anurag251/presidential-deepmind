@@ -71,7 +71,7 @@ section
 
 .title
   text-align: center
-  margin-bottom: 2rem
+  margin-bottom: 3rem
   h4
     text-transform: uppercase
     color: $pri
@@ -106,6 +106,58 @@ h4
 
 h5
   font-size: 14px
+
+.admission-open
+  position: fixed
+  bottom: 10px
+  right: 10px
+  width: 200px
+  z-index: 10
+
+  .admission-btn
+    @include flex($justify: space-between)
+    padding: .5rem 1rem
+    background-color: $main
+    color: $light
+    box-shadow: 0 2px 4px rgba($dark, .25)
+    border-radius: 8px
+    width: 100%
+    font-size: 17px
+    cursor: pointer
+
+    i
+      font-size: 14px
+
+  .list
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    background-color: $light
+    box-shadow: 0 2px 4px rgba($dark, .25)
+    padding: 1rem
+    border-radius: 8px
+    pointer-events: none
+    opacity: 0
+    @include trans()
+
+    &.active
+      bottom: 45px
+      opacity: 1
+      pointer-events: auto
+
+    li
+      @include flex($justify: space-between)
+      margin-bottom: 1rem
+
+      button
+        @include button($color: $main)
+        padding: .3rem .5rem
+        border-radius: 20px
+
+      &:nth-last-child(1)
+        margin-bottom: 0
 
 .enquiry
   position: absolute
@@ -677,6 +729,11 @@ header
     .swiper-pagination-bullet
       height: 12px
       width: 12px
+      @include trans()
+      border-radius: 20px
+
+      &.swiper-pagination-bullet-active
+        width: 30px
 
   .swiper-slide
     margin-top: 6rem
@@ -762,6 +819,11 @@ header
     .swiper-pagination-bullet
       height: 12px
       width: 12px
+      @include trans()
+      border-radius: 20px
+
+      &.swiper-pagination-bullet-active
+        width: 30px
 
   .swiper-wrapper
     padding: 1rem 0 3rem
@@ -899,3 +961,300 @@ footer
             width: 100%
             background-color: $light
             padding: .7rem
+
+/*********************      page-banner      ***********************/
+.page-banner
+  height: 500px
+  @include image
+  @include flex($justify: center)
+  text-align: center
+  position: relative
+
+  &::after
+    content: ''
+    @include dark($opacity: .4)
+    z-index: 1
+
+  .page-title
+    position: relative
+    z-index: 2
+    color: $light
+
+    h1
+      font-size: 50px
+
+    h6
+      font-size: 18px
+      font-weight: 400
+      text-transform: uppercase
+
+      @include flex($justify: center)
+
+      a
+        color: $light
+
+      i
+        margin: 0 1rem
+        font-size: 14px
+
+/*********************      about-page      ***********************/
+.about-page
+  @include grid($column: 1fr 1fr)
+  padding-bottom: 4rem
+
+  &:hover
+    .image
+      .img
+        transform: scale(1.1)
+        transition: transform 10s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
+  .image
+    height: 100%
+    width: 100%
+    overflow: hidden
+
+    .img
+      @include image()
+      width: 100%
+      height: 100%
+
+  .details
+    padding: 2rem 0
+
+    .title
+      text-align: left
+      margin-bottom: 1rem
+
+    p
+      font-size: 18px
+      line-height: 33px
+      color: $para
+      margin-bottom: 2rem
+      text-align: justify
+
+    h4
+      font-size: 24px
+
+    ul
+      li
+        font-size: 18px
+        line-height: 33px
+        color: $para
+        text-align: justify
+        list-style: disc
+        margin-left: 2rem
+        margin-bottom: 1rem
+
+/*********************      learning-approaches & core-comperencies      ***********************/
+.learning-approaches, .core-comperencies
+  .list
+    @include grid($column: 1fr 1fr 1fr 1fr)
+
+    .item
+      @include flex($justify: center)
+      flex-direction: column
+      text-align: center
+      margin-bottom: 2rem
+
+      .icon
+        height: 50px
+        width: 50px
+        @include flex($justify: center)
+        margin-bottom: .5rem
+
+        img
+          width: 100%
+
+/*********************      teams      ***********************/
+.teams
+  .list
+    &.list-grid
+      @include grid($column: 1fr 1fr 1fr 1fr)
+
+    .item
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+      .image
+        height: 350px
+        width: 100%
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+          @include trans()
+
+      .details
+        padding: 1rem
+        text-align: center
+        background-color: $light
+        color: $dark
+
+        .name
+          font-size: 18px
+          font-weight: 600
+          margin-bottom: 10px
+
+        .info
+          font-size: 15px
+          text-transform: uppercase
+          color: $para
+
+/*********************      chairman      ***********************/
+.chairman
+  @include grid($column: 2fr 1fr)
+
+  .image
+    height: 550px
+    width: 100%
+    position: relative
+
+    .owner-details
+      position: absolute
+      left: 10px
+      bottom: 10px
+      background-color: rgba($pri, 0.8)
+      padding: 1rem
+      max-width: 300px
+      width: 100%
+      color: $light
+      opacity: 0
+      @include trans()
+      transition-delay: 0.4s
+
+      .name
+        font-size: 24px
+        margin-bottom: 10px
+
+      p
+        margin-top: 10px
+
+    .img
+      @include image()
+      width: 100%
+      height: 100%
+
+    &:hover
+      .shine
+        animation: shine 0.4s
+
+      .owner-details
+        bottom: 10px
+        opacity: 1
+
+    .shine
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      width: 100px
+      background-image: linear-gradient(to right,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.2))
+      @include trans()
+      opacity: 0
+
+    @keyframes shine
+      0%
+        right: 100%
+        opacity: 1
+
+      50%
+        right: 0
+        opacity: 1
+
+      100%
+        right: -10%
+        opacity: 0
+
+  .details
+
+    .title
+      text-align: left
+      margin-bottom: 1rem
+
+    p
+      font-size: 18px
+      line-height: 33px
+      color: $para
+      margin-bottom: 2rem
+      text-align: justify
+
+    button
+      @include button($color: $main)
+      text-transform: uppercase
+
+/*********************      chairman      ***********************/
+.governing
+  .item
+    box-shadow: 4px 4px 25px rgba($dark, .15)
+    border-radius: 15px
+    overflow: hidden
+    margin-bottom: 2rem
+
+    .heading
+      background-color: $pri
+      color: $light
+      padding: 1rem 2rem
+      font-size: 24px
+
+    p
+      padding: 1rem 2rem
+      font-size: 18px
+      line-height: 2rem
+      color: $para
+
+/*********************      blog      ***********************/
+.blog
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      box-shadow: 0 0 30px rgba($dark, .09)
+      @include trans()
+
+      &:hover
+        transform: translateY(-4px)
+
+        .image
+          .img
+            transform: scale(1)
+
+      .image
+        height: 250px
+        width: 100%
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+          transform: scale(1.1)
+          @include trans()
+
+      .details
+        padding: 1.5rem
+
+        h6
+          font-size: 16px
+
+        h4
+          font-size: 24px
+          color: $pri
+          margin-bottom: 1rem
+
+        p
+          font-size: 18px
+          color: $para
+          margin-bottom: 1.5rem
+
+        button
+          padding-top: 1.5rem
+          border-top: 1px solid #bfbfbf
+          width: 100%
+          text-align: left
+          font-size: 18px
+          text-transform: uppercase
+          font-weight: 700
+          cursor: pointer

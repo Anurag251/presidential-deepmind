@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="index.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <li>Faculty</li>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <li>Faculty</li>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/page-banner.jpeg)"
+    >
+      <div class="page-title">
+        <h1>Blog</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> Blog
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- blog-start -->
+    <section>
+      <div class="wrapper">
+        <div class="blog">
+          <div class="title">
+            <h4>Read All News</h4>
+            <h2>Latest News</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog1.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog2.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog3.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog4.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog5.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog6.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog7.jpg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog8.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/blog9.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h6>Dec 23 2020</h6>
+                <a href="blog-details.html">
+                  <h4 class="name">Notice for AGM</h4>
+                </a>
+                <p>
+                  A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my...
+                </p>
+                <a href="blog-details.html">
+                  <button>View</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>
