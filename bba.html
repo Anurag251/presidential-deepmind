@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/about-bba.jpeg)"
+    >
+      <div class="page-title">
+        <h1>About BBA</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> BBA
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- faculty-start -->
+    <section>
+      <div class="wrapper">
+        <div class="about-bba">
+          <div class="title">
+            <h4>Bachelors</h4>
+            <h2>Bachelors of Business Administration (BBA)</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba1.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">BBA Philosophy</h2>
+                <p>
+                  Bachelors of Business Administration (BBA) is the world’s
+                  other sought-after business course that integrates academic
+                  rigor with real-life problem-solving approaches, which
+                  ultimately equips the BBA graduates with the entrepreneurial
+                  know-how to excel at business and management. The program
+                  curriculum fuses business/ management theories with day-to-day
+                  business issues. Students at this level are trained to explore
+                  fundamental business concepts while they simultaneously
+                  develop an awareness of ethically and socially responsible
+                  business practices, henceforth becoming team leaders capable
+                  of working effectively in a dynamic business world.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="details">
+                <h2 class="name">BBA at Presidential</h2>
+                <p>
+                  Bachelors of Business Administration (BBA) at PBS is a 4-year,
+                  120-credit program structured and built to produce
+                  middle-level managers/ business leaders. Equally competitive
+                  with the existent courses within the national curricula at
+                  universities here in Nepal, this Westcliff University degree
+                  offered by PBS is an international degree, which adheres to a
+                  global standard of curriculum to garner international
+                  recognition while it still embraces local business/ managerial
+                  values. The School believes this transnational fusion embodied
+                  in the program produces human resources that not only cater to
+                  the need of both the domestic and global markets but also
+                  thrive individually and professionally.
+                  <br />
+                  <br />
+                  The PBS Bachelors of Business Administration (BBA) course
+                  prepares graduates for a wide range of managerial positions in
+                  business and non-profit organizations with special emphasis on
+                  crucial areas of specialization to meet the market need.
+                  Students acquire fundamental as well as practical professional
+                  skills in all phases of business including decision-making and
+                  problem-solving capacities. Further, this undergraduate
+                  program prepares individuals to plan, organize, direct, and
+                  control the functions and processes of a firm and an
+                  organization. The program includes instruction in management
+                  theory, human resource management and behavior, accounting,
+                  and other qualitative methods, purchasing and logistics,
+                  organization and production, and marketing and business
+                  decision-making. Not to mention, this academic program
+                  provides students with a sound conceptual foundation and
+                  practical skills in various areas of business.
+                </p>
+              </div>
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba2.jpeg)"
+                ></div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba3.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">BBA PROGRAM LEARNING OUTCOMES</h2>
+                <p>
+                  The Bachelors of Business Administration (BBA) course at PBS
+                  encourages students to achieve the following academic and
+                  professional objectives:
+                </p>
+                <ul>
+                  <li>
+                    Differentiate and discuss the functional components of
+                    business – economics, marketing, accounting, finance, law,
+                    and management
+                  </li>
+                  <li>
+                    Demonstrate effective presentation of business analyses and
+                    recommendations through written forms of communication
+                    appropriate to the intended audience
+                  </li>
+                  <li>
+                    Demonstrate effective presentation of business analyses and
+                    recommendations through oral communication of conventions
+                    and forms appropriate to the intended audience
+                  </li>
+                  <li>
+                    Demonstrate the ability to recognize the need for
+                    information, be able to identify, locate, evaluate, share
+                    and apply the information effectively to facilitate
+                    problem-solving and decision-making
+                  </li>
+                  <li>
+                    Illustrate the value of diversity when developing a global
+                    perspective
+                  </li>
+                  <li>
+                    Use independent, critical thinking, and reasoning skills to
+                    identify problems and apply problem-solving abilities
+                  </li>
+                  <li>
+                    Employ a sense of ethics and values that can be applied in a
+                    personal and professional environment
+                  </li>
+                  <li>
+                    Construct and apply aspects of team development and
+                    construct for the purpose of solving business problems and
+                    attaining organizational goals
+                  </li>
+                  <li>
+                    Analyze business problems through quantitative reasoning and
+                    methods by obtaining, evaluating, and interpreting the data
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="others-details">
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                To study BBA course in Nepal, Highschool/+2/A-Level or
+                equivalent degree in any discipline from recognized board of
+                Nepal or from any other board across the globe recognized by
+                HSEB board of Nepal. For A- level, 3.5 credit hours is required.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Duration:</div>
+              <p>BBA Course Duration in Nepal is 4 Years</p>
+            </div>
+
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                In order to apply for BBA in Nepal, Student must complete 120
+                prescribed credit hours with a cumulative GPA of 2.0 or higher,
+                including 60 credits core business courses, 45 credits
+                foundation, general education and elective courses and 15
+                credits concentration courses. In addition, a 60-days internship
+                with report submission is required.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Concentration:</div>
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/bba.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Marketing:</strong> BBA Marketing at Presidential
+                  Business School prepares students with knowledge and tools
+                  they need to be a marketing officer and manager
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/bba.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Finance:</strong> BBA Finance is focused on the tools
+                  and techniques used in the world of finance. With the
+                  combination of courses that focus on various financial
+                  concepts…
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/bba.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Entrepreneurship:</strong> The BBA Entrepreneurship at
+                  Presidential Business School is designed to integrate
+                  fundamentals of organizing a small business, challenges of
+                  entrepreneurship, building the business plan, strategic
+                  planning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faculty-end -->
+
+    <section>
+      <div class="wrapper">
+        <div class="bba-course-fee">
+          <div class="title">
+            <h4>Bachelors</h4>
+            <h2>BBA Course Fee</h2>
+          </div>
+
+          <div class="section">
+            <div class="details">
+              <div class="item">
+                <div class="heading">Best BBA Course in Nepal</div>
+                <p>
+                  BBA is world’s another sought after business qualification
+                  that integrates academic rigor with real-life problem-solving
+                  approaches, which ultimately equips the BBA graduates with the
+                  entrepreneurial know-how to excel at business and management.
+                  <br />
+                  <br />
+                  The program curriculum fuses business/ management theories
+                  with day-to-day business issues. Students at this level are
+                  trained to explore fundamental business concepts while they
+                  simultaneously develop an awareness of ethically and socially
+                  responsible business practices, henceforth becoming team
+                  leaders capable of working effectively in a dynamic business
+                  world.
+                </p>
+              </div>
+
+              <div class="item">
+                <div class="heading">BBA at Presidential</div>
+                <p>
+                  The PBS BBA is a 4-year, 120-credit program structured and
+                  built to produce middle-level managers/ business leaders.
+                  Equally competitive with the existent courses within the
+                  national curricula at universities here in Nepal, this
+                  Westcliff University degree offered by PBS is an international
+                  degree, which adheres to a global standard of the curriculum
+                  to garner international recognition while it still embraces
+                  local business/ managerial values. The School believes this
+                  transnational fusion embodied in the program produces human
+                  resources that not only cater to the need of both the domestic
+                  and global markets but also thrive individually and
+                  professionally.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="course-fee-enquire">
+                <h2>Course Fee Enquire</h2>
+                <form action="">
+                  <div class="group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" name="" id="fullname" />
+                  </div>
+
+                  <div class="group">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="text" name="" id="phone" />
+                  </div>
+
+                  <div class="group">
+                    <label for="Concentration">Concentration *</label>
+                    <select name="" id="Concentration">
+                      <option value="bba-marketing">BBA Marketing</option>
+                      <option value="bba-entrepreneurship">
+                        BBA Entrepreneurship
+                      </option>
+                      <option value="bba-financial ">BBA Financial</option>
+                    </select>
+                  </div>
+
+                  <div class="group">
+                    <label for="eamil">Email</label>
+                    <input type="email" name="" id="eamil" />
+                  </div>
+
+                  <div class="group">
+                    <label for="message">Message *</label>
+                    <textarea
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+
+                  <button>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>

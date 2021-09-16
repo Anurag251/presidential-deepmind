@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/about-bba.jpeg)"
+    >
+      <div class="page-title">
+        <h1>About MBA</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> MBA
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- about-mba-start -->
+    <section>
+      <div class="wrapper">
+        <div class="about-mba">
+          <div class="title">
+            <h4>Masters</h4>
+            <h2>Masters of Business Administration (MBA)</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba1.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">MBA Philosophy</h2>
+                <p>
+                  MBA is the world’s most valuable business qualification. It is
+                  a powerful embodiment of some of the most desirable attributes
+                  in any executive: intelligence, innovation and determination.
+                  <br />
+                  The Master of Business Administration curriculum includes a
+                  whole range of exciting courses. The goal is to develop
+                  motivation in students to appreciate the wisdom of acquiring
+                  lifelong learning; to equip students with well developed
+                  analytical, conceptual, quantitative human skills; to nurture
+                  positive attitude and self-confidence; and to develop the
+                  ability in leading and working in teams, and to shoulder
+                  responsibility and understand business ethics.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="details">
+                <h2 class="name">MBA at Presidential</h2>
+                <p>
+                  The PBS MBA course conceived primarily to suit the need of the
+                  working professionals is 2 years, 60-credit program structured
+                  to allow enough flexibility for (working) students. Equally
+                  competitive with the existent full-time courses within the
+                  domestic curricula from diverse national universities, this
+                  Westcliff University degree offered by PBS is an
+                  internationally recognized degree, which is hybrid in nature.
+                  While it adheres to a global standard of curriculum to garner
+                  international recognition, it also integrates local business/
+                  managerial values to produce human resources that cater to the
+                  need of the domestic market in addition to the international
+                  one.
+                  <br />
+                  <br />
+                  Presidential Business School unlocks a plethora of real-life
+                  opportunities to the graduates with comprehensive skills of
+                  leadership, management, critical thinking, and
+                  entrepreneurship. We strive to empower students with
+                  conceptual learning patterns to nurture them into sound
+                  professionals and make them agile enough to tackle unknown
+                  challenges in the real world. Our teaching approach is beyond
+                  the academic prospectus. We provide the right orientation,
+                  workshops, and industry-related projects, career conclave,
+                  seminars, and the required guidance from notable members to
+                  ensure every student grows beyond their potential. We
+                  prioritize unconventional learning and teaching pedagogy to
+                  embrace the distinctiveness of every student
+                </p>
+              </div>
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba2.jpeg)"
+                ></div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bba3.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">MBA Learning Outcomes</h2>
+                <p>
+                  The MBA program at PBS encourages students to achieve the
+                  following academic and professional objectives:
+                </p>
+                <ul>
+                  <li>
+                    Develop mastery of functional components of
+                    business—economics, marketing, accounting, finance, law,
+                    organizational behaviour, and leadership
+                  </li>
+                  <li>
+                    Demonstrate effective presentation of business analyses and
+                    recommendations through written forms of communication
+                    appropriate to the intended audience
+                  </li>
+                  <li>
+                    Appraise current information technology effectively to
+                    support business decision making
+                  </li>
+                  <li>
+                    Value and integrate diversity and a global perspective in
+                    business decisions
+                  </li>
+                  <li>
+                    Compile independent, critical thinking, and reasoning skills
+                    to critique problems and develop problem-solving and
+                    decision-making abilities
+                  </li>
+                  <li>
+                    Integrate ethical issues in a business context and formulate
+                    alternatives that demonstrate ethical values
+                  </li>
+
+                  <li>
+                    Facilitate the use of research and information from all
+                    mediums for the purpose of promoting critical thinking as it
+                    is applied to learning complex business concepts
+                  </li>
+                  <li>
+                    Evaluate, analyze, and communicate quantitative data to
+                    improve and sustain strategic business initiatives
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="others-details">
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                Eligibility for MBA requires a Bachelor’s degree in any
+                discipline from recognized universities around the globe with a
+                minimum CGPA of 2.0, or 45% or an equivalent grade scale at the
+                undergraduate level.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Duration:</div>
+              <p>MBA Course Duration in Nepal is 2 Years</p>
+            </div>
+
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                Student must complete sixty (60) prescribed credit hours with a
+                cumulative GPA of 3.0 or higher, including 48 credits MBA core
+                course and 12 credits concentration course.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Concentration:</div>
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Entrepreneurship:</strong> MBA e-Business management
+                  @PBS designed to integrate technology, business, marketing to
+                  prepare graduates for field of online business
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Marketing:</strong> MBA–Concentration in Marketing
+                  prepares students with the knowledge and tools they need to be
+                  a marketing department officer
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Organizational Management:</strong> MBA Organizational
+                  Management purpose is to provide students with practical,
+                  theoretical concepts that will assist them
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Supply Chain Management:</strong> MBA Supply Chain
+                  Management is focused on the study of movement & storage of
+                  raw materials, work-in-process inventory & finished goods
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>e-Business Management:</strong> The MBA e-Business
+                  Management is designed to integrate technology, business,
+                  marketing, and employability skills to prepare graduates for
+                  jobs in the growing field of e-business /e- commerce
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Financial Management:</strong> The financial
+                  management program is designed to provide both a sound
+                  theoretical and a conceptual and practical framework for
+                  financial managers.
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/MBA.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Business Statistics & Data Analytics:</strong> The
+                  purpose of the Concentration in Business Statistics and Data
+                  Analytics is to provide students with the skills and practical
+                  and theoretical concepts that will assist them when seeking
+                  promotions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-mba-end -->
+
+    <!-- mba-course-fee-start -->
+    <section>
+      <div class="wrapper">
+        <div class="mba-course-fee">
+          <div class="title">
+            <h4>Masters</h4>
+            <h2>MBA Course Fee</h2>
+          </div>
+
+          <div class="section">
+            <div class="details">
+              <div class="item">
+                <div class="heading">MBA Philosophy</div>
+                <p>
+                  MBA is the world’s most valuable business qualification. It is
+                  a powerful embodiment of some of the most desirable attributes
+                  in any executive: intelligence, innovation and determination.
+                  <br />
+                  The Master of Business Administration curriculum includes a
+                  whole range of exciting courses. The goal is to develop
+                  motivation in students to appreciate the wisdom of acquiring
+                  lifelong learning; to equip students with well developed
+                  analytical, conceptual, quantitative human skills; to nurture
+                  positive attitude and self-confidence; and to develop the
+                  ability in leading and working in teams, and to shoulder
+                  responsibility and understand business ethics.
+                </p>
+              </div>
+
+              <div class="item">
+                <div class="heading">MBA at Presidential</div>
+                <p>
+                  The PBS MBA conceived primarily to suit the need of the
+                  working professionals is a 2 years, 60-credit program
+                  structured to allow enough flexibility for (working) students.
+                  Equally competitive with the existent full-time courses within
+                  the domestic curricula from diverse national universities,
+                  this Westcliff University degree offered by PBS is an
+                  internationally-recognized degree, which is hybrid in nature.
+                  While it adheres to a global standard of curriculum to garner
+                  international recognition, it also integrates local business/
+                  managerial values to produce human resources that cater to the
+                  need of the domestic market in addition to the international
+                  one.
+
+                  <br />
+                  <br />
+
+                  The inductive learning model of MBA at PBS transcends the
+                  confines of facts and theories—a process that teaches
+                  individuals not only how to manage organizations, but also how
+                  to continually grow and learn throughout life. The PBS MBA, in
+                  fact, blends theory with practical applications, consolidated
+                  further by insightful (guest) lectures, thorough examinations
+                  of real-life cases, field studies, project works, workshops
+                  and seminars, presentation sessions, and training programs.
+                  Moreover, the program keeps itself abreast of the current
+                  trends, hence, fashioning the careers and honing the skills of
+                  future CEOs, managers and otherwise through as much empirical
+                  learning as through abstract theories. Students also benefit
+                  from an array of elective specializations. Some major areas of
+                  specialization are explored on the basis of the current
+                  international job market trends and needs.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="course-fee-enquire">
+                <h2>Course Fee Enquire</h2>
+                <form action="">
+                  <div class="group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" name="" id="fullname" />
+                  </div>
+
+                  <div class="group">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="text" name="" id="phone" />
+                  </div>
+
+                  <div class="group">
+                    <label for="Concentration">Concentration *</label>
+                    <select name="" id="Concentration">
+                      <option value="mba-organizational">
+                        MBA Organizational
+                      </option>
+                      <option value="mba-entrepreneurship">
+                        MBA Entrepreneurship
+                      </option>
+                      <option value="mba-marketing">MBA Marketing</option>
+                      <option value="mba-financial-management">
+                        MBA Financial Management
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="group">
+                    <label for="eamil">Email</label>
+                    <input type="email" name="" id="eamil" />
+                  </div>
+
+                  <div class="group">
+                    <label for="message">Message *</label>
+                    <textarea
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+
+                  <button>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mba-course-fee-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>

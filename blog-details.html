@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- blog-details-start -->
+    <div
+      class="blog-image"
+      style="background-image: url(./images/img/page-banner.jpeg)"
+    ></div>
+    <div class="wrapper">
+      <div class="blog-details">
+        <div class="blog-title">
+          <h2>Learn at the best MBA college in Nepal | PBS</h2>
+          <div class="time">
+            Posted on <span>August 11, 2021 (August 16, 2021)</span> by
+            <span>Presidential Business School</span>
+          </div>
+        </div>
+        <div class="detaile">
+          <div class="group">
+            <h4 class="name">Best MBA College in Nepal</h4>
+            <p>
+              Choosing the right college can feel ominous at times with hundreds
+              of colleges available, that are committed to the same motto of
+              providing quality education. While you have chosen to pursue an
+              MBA, deciding the best college is crucial to get you on a
+              promising career track and have professional satisfaction. Since
+              the type of college you choose will definitely influence the
+              skills and attributes you receive, we believe this article will
+              certainly help you determine your decisions.
+            </p>
+          </div>
+
+          <div class="group">
+            <h4 class="name">What is MBA?</h4>
+            <p>
+              The Master of Business Administration is the world’s most
+              sought-after professional degree that offers the students
+              comprehensive knowledge of managerial, leadership, and technical
+              skills. Pursuing an MBA degree expands your analytical,
+              conceptual, quantitative skills, valuable connections, and
+              business perception. It is a versatile degree that emphasizes
+              multiple courses of accounting, finance, economics, and marketing
+              with a practical project to deal with real-world business problems
+              and gain exposure to professional business functions.
+            </p>
+          </div>
+
+          <div class="group">
+            <h4 class="name">Scope of MBA</h4>
+            <p>
+              This two-year business qualification has successfully heightened
+              the interest of the students from all backgrounds due to its
+              increasing scope in Nepal and the imminent need for its skills in
+              every organization. The practical-oriented learning pattern in
+              this degree will infuse any high-level administrative and
+              managerial post of both government and private sectors. Its highly
+              adaptable scope has led to excessive demand for MBA graduates all
+              over the world. With the practical training, internship, field
+              visits, competitions, and case studies over the course of the
+              program, you will be unlocking unlimited future possibilities and
+              opportunities. Thus, these are some of the high paying job
+              profiles you can look at after the completion of the program:
+            </p>
+
+            <ul>
+              <li>Marketing manager</li>
+              <li>Investment Banker</li>
+              <li>Financial Manager</li>
+              <li>Health Service Manager</li>
+              <li>Business Operations Manager</li>
+              <li>Management consultant</li>
+            </ul>
+
+            <p>
+              However, the opportunities are not limited to the aforementioned
+              career profiles; you will receive abundant high-position jobs as
+              per your stream and specialization in the future as the
+              significance of MBA graduates is high in any sector.
+            </p>
+          </div>
+
+          <div class="group">
+            <h4 class="name">Why MBA?</h4>
+            <p>
+              As you have decided to choose MBA, you are a step ahead of making
+              a positive investment in your life. The majority of MBA alumni
+              believe the degree to be personally, professionally, and
+              financially rewarding. Besides, the skills, job opportunities,
+              professional network, you gather through the program are
+              limitless. You can achieve immense learning outcome of effective
+              presentation skills of business analysis through appropriate
+              communication approach, compile critical thinking and
+              problem-solving abilities. In addition to that, you will be
+              capable of assessing the modern information technology techniques
+              that are useful in real-world business problem-solving.
+            </p>
+          </div>
+
+          <div class="group">
+            <h4 class="name">Best MBA College</h4>
+            <p>
+              If you are searching for the best MBA college in Nepal that can
+              assure a quality learning experience and splendid college life,
+              Presidential Business School is one of the leading MBA colleges in
+              Nepal with the finest academic facility and competent syllabus.
+              <br />
+              <br />
+              Presidential Business School offers unparalleled education service
+              with a holistic approach to teaching and learning of the students.
+              It is affiliated to Westcliff University, California, the USA that
+              has designed the curriculum to provide in-depth knowledge of
+              business administration to prepare a student as a qualified and
+              competent business professional. PBS offers 2 years, 60 credit
+              internationally-recognized degree where you can acquire great
+              international exposure and excellent career growth.
+              <br />
+              <br />
+              We believe a student must surround by a stimulating and vibrant
+              environment to achieve the desired goal. So, we prioritize
+              unconventional learning and teaching pedagogy to embrace the
+              distinctiveness of every student. Our teaching approach is beyond
+              the academic prospectus, we provide the right orientation,
+              workshops, and industry-related projects, career conclave,
+              seminars, and the required guidance to ensure every student grows
+              beyond their potential.
+              <br />
+              <br />
+              We enhance research-based and action-oriented learning approaches
+              to empower students with conceptual learning patterns and nurture
+              them into sound professionals and make them agile enough to tackle
+              unknown challenges in the real world We aim to develop motivation
+              in students to appreciate the wisdom of acquiring lifelong
+              learning, nurture positive attitude and self-confidence, develop
+              the ability in leading and working in teams, to shoulder
+              responsibility and understand business ethics.
+              <br />
+              <br />
+              If you want to explore more on what PBS offers, visit through MBA
+              at Presidential.
+            </p>
+          </div>
+
+          <div class="group">
+            <h4 class="name">Leave a Reply</h4>
+            <p>
+              Your email address will not be published. Required fields are
+              marked *
+            </p>
+
+            <div class="form">
+              <form action="">
+                <div class="groups">
+                  <div class="group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" required />
+                  </div>
+
+                  <div class="group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required />
+                  </div>
+                </div>
+
+                <div class="group">
+                  <label for="website">Website </label>
+                  <input type="url" id="website" />
+                </div>
+
+                <div class="group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    name=""
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <div class="check-group">
+                  <input type="checkbox" name="" id="checkbox" />
+                  <label for="checkbox"
+                    >Save my name, email, and website in this browser for the
+                    next time I comment.</label
+                  >
+                </div>
+
+                <button>Post Comment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog-details-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>

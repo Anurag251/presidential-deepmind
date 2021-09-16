@@ -72,6 +72,7 @@ section
 .title
   text-align: center
   margin-bottom: 3rem
+
   h4
     text-transform: uppercase
     color: $pri
@@ -963,12 +964,14 @@ footer
             padding: .7rem
 
 /*********************      page-banner      ***********************/
+
 .page-banner
   height: 500px
-  @include image
-  @include flex($justify: center)
   text-align: center
   position: relative
+  overflow: hidden
+  @include flex($justify: center)
+  @include image
 
   &::after
     content: ''
@@ -996,6 +999,13 @@ footer
       i
         margin: 0 1rem
         font-size: 14px
+
+@keyframes zoom-in-out
+  from
+    transform: scale(1)
+
+  to
+    transform: scale(1.4)
 
 /*********************      about-page      ***********************/
 .about-page
@@ -1258,3 +1268,379 @@ footer
           text-transform: uppercase
           font-weight: 700
           cursor: pointer
+
+/*********************      blog-details      ***********************/
+.blog-image
+  height: 600px
+  width: 100%
+  @include image
+
+.blog-details
+  margin-top: 2rem
+  .blog-title
+    margin-bottom: 2rem
+
+    .time
+      font-size: 16px
+      font-weight: 600
+
+      span
+        color: $pri
+
+  .group
+    margin-bottom: 2rem
+    h4
+      margin-bottom: .5rem
+      font-size: 20px
+
+    p
+      font-size: 18px
+      line-height: 2rem
+      color: $para
+
+    ul
+      margin: 1rem 0
+
+      li
+        font-size: 18px
+        line-height: 2rem
+        color: $para
+        list-style: decimal
+        margin-left: 2rem
+
+  .form
+    margin-top: 2rem
+
+    .groups
+      @include grid($column: 1fr 1fr)
+
+    .group
+      position: relative
+      border-radius: 15px
+      border: 1px solid #bfbfbf
+      margin-bottom: 1.5rem
+
+      label
+        position: absolute
+        top: 0
+        left: 15px
+        transform: translateY(-50%)
+        font-size: 14px
+        background-color: $light
+        padding: .2rem .7rem
+        color: $para
+        border-radius: 20px
+
+      input, select, textarea
+        padding: 1rem 1rem .7rem
+        width: 100%
+        font-size: 18px
+
+      textarea
+        height: 200px
+
+    .check-group
+      @include flex($justify: start)
+      input
+        margin-right: 10px
+        height: 20px
+        width: 20px
+
+      label
+        font-size: 18px
+        color: $para
+
+    button
+      margin-top: 2rem
+      font-size: 18px
+      padding: .7rem 2rem
+      @include button($color: $pri)
+
+/*********************      faculty      ***********************/
+.faculty
+  .list
+    @include grid($column: 1fr 1fr 1fr 1fr)
+
+    .item
+      position: relative
+      margin-bottom: 8rem
+
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+
+        .details
+          top: 108%
+          transform: translate(-50%, -50%) scale(1.02)
+          box-shadow: 0 4px 12px rgba($dark, .14)
+          background-color: rgba($light, 1)
+
+      .image
+        height: 300px
+        width: 100%
+        border-radius: 15px
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+          @include trans()
+
+      .details
+        position: absolute
+        top: 110%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 1rem
+        width: 90%
+        background-color: rgba($light, .8)
+        backdrop-filter: blur(5px)
+        box-shadow: 0 2px 11px rgba($dark, .14)
+        border-radius: 15px
+        @include trans()
+
+        .name
+          font-size: 22px
+          font-weight: 700
+          color: $pri
+
+        .post
+          color: $para
+          margin: .5rem 0
+          font-size: 14px
+          width: 100%
+          font-style: italic
+
+        p
+          font-size: 15px
+          line-height: 1.3rem
+          color: $dark
+
+/*********************      services      ***********************/
+.services
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      margin-top: 9rem
+      position: relative
+      background-color: $light
+      border-radius: 38px
+      box-shadow: 0 6px 22px rgba($dark, .13)
+      padding: 2rem
+      padding-top: 9rem
+
+      .image
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translate(-50%, -50%)
+        height: 250px
+        width: 92%
+        border-radius: 26px
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+          transform: scale(1.1)
+          @include trans()
+
+      .details
+        .name
+          font-size: 22px
+          font-weight: 600
+          margin-bottom: 1rem
+
+        p
+          font-size: 15px
+          line-height: 19px
+          text-align: justify
+          color: $para
+
+  h1
+    font-size: 30px
+    margin: 4rem 0 1rem
+
+  p
+    font-size: 18px
+    line-height: 2rem
+    color: $para
+
+  .group
+    @include grid($column: 1fr 5fr)
+
+    .image
+      width: 100%
+
+      img
+        width: 90%
+
+  .advisors, .executive-team
+    .item
+      margin-bottom: 3rem
+
+      .info
+        margin-top: 1rem
+        .name
+          font-size: 22px
+          font-weight: 700
+          margin-bottom: .5rem
+
+        ul
+          margin: 2rem 0
+
+          &.num
+            li
+              list-style: decimal
+
+          li
+            font-size: 18px
+            line-height: 2rem
+            color: $para
+            list-style: disc
+            margin-left: 2rem
+
+/*********************      about-bba & about-mba      ***********************/
+.about-bba, .about-mba
+  .list
+    margin-bottom: 4rem
+    .item
+      margin-bottom: 6rem
+      @include grid($column: 1fr 1fr)
+
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+
+      .image
+        height: 100%
+        width: 100%
+        overflow: hidden
+
+        .img
+          height: 100%
+          width: 100%
+          @include image
+
+      .details
+        .name
+          margin-bottom: 1rem
+          font-size: 30px
+
+        p
+          font-size: 20px
+          line-height: 2rem
+          color: $para
+          text-align: justify
+
+        ul
+          margin-top: 2rem
+
+          li
+            font-size: 20px
+            line-height: 2rem
+            color: $para
+            margin-bottom: 1rem
+            margin-left: 2rem
+            list-style: disc
+
+  .others-details
+    .item
+      margin-bottom: 2rem
+      .name
+        font-size: 22px
+        font-weight: 700
+        margin-bottom: .5rem
+
+      p
+        margin-left: 2rem
+        font-size: 18px
+        color: $para
+        line-height: 2rem
+
+      .desc
+        @include flex($justify: flex-start)
+        @include grid($column: 40px 1fr)
+        margin-bottom: 1rem
+        margin-left: 2rem
+
+        .image
+          height: 70px
+          width: 70px
+          border-radius: 50%
+
+          .img
+            width: 100%
+            height: 100%
+            @include image
+
+/*********************      bba-course-fee & mba-course-fee      ***********************/
+.bba-course-fee, .mba-course-fee
+  .section
+    @include grid($column: 1fr 1fr)
+
+    .details
+      .item
+        box-shadow: 4px 4px 25px rgba($dark, .15)
+        border-radius: 15px
+        overflow: hidden
+        margin-bottom: 2rem
+
+        .heading
+          background-color: $pri
+          color: $light
+          padding: 1rem 2rem
+          font-size: 24px
+
+        p
+          padding: 1rem 2rem
+          font-size: 18px
+          line-height: 2rem
+          color: $para
+
+    .course-fee-enquire
+      padding: 2rem
+      background: #FFFFFF
+      box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.16)
+      border-radius: 15px
+
+      h2
+        color: $pri
+        margin-bottom: 3rem
+        text-align: center
+
+      .group
+        position: relative
+        border-radius: 15px
+        border: 1px solid #bfbfbf
+        margin-bottom: 3rem
+
+        label
+          position: absolute
+          top: 0
+          left: 15px
+          transform: translateY(-50%)
+          font-size: 14px
+          background-color: $light
+          padding: .2rem .7rem
+          color: $para
+          border-radius: 20px
+
+        input, select, textarea
+          padding: 1rem 1rem .7rem
+          width: 100%
+          font-size: 18px
+
+        textarea
+          height: 200px
+
+      button
+        @include button($color: $pri)
+        font-size: 18px
+        padding: .7rem 2rem

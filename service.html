@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body style="background-color: #f1f1f1">
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/page-banner.jpeg)"
+    >
+      <div class="page-title">
+        <h1>Services</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> Services
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- Services-start -->
+    <section>
+      <div class="wrapper">
+        <div class="services">
+          <div class="title">
+            <h4>Service we provide</h4>
+            <h2>Our Services</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service1.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">Career Center</div>
+                <p>
+                  The main purpose of the Career Center is to educate and serve
+                  students in their career education, planning, and development
+                  process.
+                  <br />
+                  <br />
+                  The Career Center at PBS provides students with individual and
+                  group counseling, exploration of career options, and
+                  information on occupational fields and employment trends.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service2.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">DCE (Student Center)</div>
+                <p>
+                  The Department of Continuing Education (DCE) is an extension
+                  of Presidential Business School conceived to offer
+                  complementary/ integral skill-enhancement (non-credit) to its
+                  students, faculty and enthusiast.
+
+                  <br />
+                  <br />
+                  Student Center works on providing skill based sessions from an
+                  array of diverse colleges/universities, corporate houses and
+                  the like.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service3.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">ECA / CCA</div>
+                <p>
+                  Presidential focuses not only on the academic prospect, but
+                  also promote extra co-curricular activities to further enhance
+                  the personality of a student. Presidential gives the platform
+                  to unleash the talents through different events both cultural
+                  and sports. We have annual events such as Sports Week, PBS
+                  Gala, Holi and other fun activities to rejoice the occasions.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service4.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">Job Placement Cell</div>
+                <p>
+                  The Job Placement Cell (JPC) at PBS is a department that works
+                  to establish and foster a wide range of corporate relations
+                  with the reputed business houses in Nepal that make room for
+                  an internship or/and job placement of our graduates whenever
+                  needed. The Cell is premised on the idea that business and
+                  Information Technology knowledge not put in an application
+                  through interns
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service5.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">Writing Center</div>
+                <p>
+                  Recognizing the importance of English language skills both
+                  during academic and professional life, the School has set up a
+                  well-resourced PBS Writing Center, where all students in need
+                  of additional guidance and support can come to write, talk,
+                  and learn academic writing skills. Students also get an
+                  opportunity to discuss their writing and receive support to
+                  improve their writing skills.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/service6.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <div class="name">Innovation Lab</div>
+                <p>
+                  PBS Innovation Lab is a platform for promoting and supporting
+                  Entrepreneurship and Entrepreneurial Preparedness. With Idea,
+                  Implementation and Skills at the core, the Lab assists
+                  students in nurturing their business ideas. The lab provides
+                  the required resources and expertise along with market linkage
+                  opportunities and also helps in developing the necessary
+                  entrepreneurial skill sets to help the students in pursuing
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h1>Center for Excellence in Business and Technology</h1>
+          <div class="group">
+            <div class="image">
+              <img src="./images/img/PCEBT-1-200x400.png" alt="" />
+            </div>
+            <div class="desc">
+              <p>
+                The Presidential COE is an initiation of PBS partnered by
+                Teenzclap Futureworks and Stanford lead alumni. The center
+                brings together National and International Subject Matter
+                Experts, Ivy League Thinktanks, Industry practitioners,
+                Investors, and Learners at a common platform to share and impart
+                skills of the future.
+                <br />
+                <br />
+                The COE develops and delivers globally researched and certified
+                opportunities for Learners, Startups, and Corporates which aims
+                at bridging the skills gap between today and the future.
+                <br />
+                <br />
+
+                With “Innovation and Implementation” as its core DNA the center
+                promotes knowledge creation, Skill Transfer of the most sought
+                after multidisciplinary academic and practice-oriented
+                opportunities.
+                <br />
+                <br />
+
+                With its state-of-the-art knowledge hub, the COE promotes a
+                proper blend of virtual and in-person learning opportunities to
+                rightfully compliment todays and replicate tomorrow’s learning
+                practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="advisors">
+            <h1>Board of Advisors</h1>
+            <div class="item">
+              <div class="image">
+                <img src="./images/img/Sanjeev-Agrawal-300x300.jpg" alt="" />
+              </div>
+              <div class="info">
+                <div class="name">Sanjeev Agrawal</div>
+                <p>
+                  Technology Professional with more than three decades of
+                  experience in the IT Services and in user industry. He has
+                  played role as Chief Information / Technology Officer (CIO/
+                  CTO) at IBM India and two large Life & Health Insurance
+                  companies plus Director of service management of global
+                  delivery centre at IBM. Majority of his career has been with
+                  IBM, CMC & Insurance companies. Currently working as Chief
+                  Digital Officer at Ramco Systems wherein, he is managing Cloud
+                  Infrastructure of customers, Digital Transformation Journey
+                  for customers & managing internal Infrastructure of Ramco
+                  Systems.
+                  <br />
+                  <br />
+                  His key experience & expertise is in managing customer
+                  relationships, business transformation & synergizing
+                  technology enabling organization journey towards digital
+                  enterprise (covers cloud adoption), delivery of strategic
+                  outsourcing clients & managing global delivery centers in
+                  infrastructure & Information security management. He has
+                  managed P&L of $100M as well cost pool of $120M plus with team
+                  size up to 1000 resources.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image">
+                <img src="./images/img/Pankaj-Mittal-300x300.jpg" alt="" />
+              </div>
+              <div class="info">
+                <div class="name">Pankaj Mittal</div>
+                <p>
+                  Technology Professional with more than three decades of
+                  experience in the IT Services and in user industry. He has
+                  played role as Chief Information / Technology Officer (CIO/
+                  CTO) at IBM India and two large Life & Health Insurance
+                  companies plus Director of service management of global
+                  delivery centre at IBM. Majority of his career has been with
+                  IBM, CMC & Insurance companies. Currently working as Chief
+                  Digital Officer at Ramco Systems wherein, he is managing Cloud
+                  Infrastructure of customers, Digital Transformation Journey
+                  for customers & managing internal Infrastructure of Ramco
+                  Systems.
+
+                  <br />
+                  <br />
+                  His key experience & expertise is in managing customer
+                  relationships, business transformation & synergizing
+                  technology enabling organization journey towards digital
+                  enterprise (covers cloud adoption), delivery of strategic
+                  outsourcing clients & managing global delivery centers in
+                  infrastructure & Information security management. He has
+                  managed P&L of $100M as well cost pool of $120M plus with team
+                  size up to 1000 resources.
+                </p>
+
+                <ul>
+                  <li>
+                    Digital Operations & delivery (Blockchain, AI/ML, BI & RPA)
+                  </li>
+                  <li>Strategic Alignment of Technology with Business</li>
+                  <li>
+                    Business Development & Go to Market for Product/Services
+                  </li>
+                  <li>Cost Optimization</li>
+                  <li>IT Strategy</li>
+                  <li>IT Security & Audits</li>
+                  <li>Startup Ecosystem</li>
+                </ul>
+
+                <p>
+                  He has worked with companies like SLK Group, Tata
+                  Communications, Vodafone & Barclays bank etc. Recently he
+                  founded DigiZen Consulting based in Pune, India & launched
+                  vCIO & vCISO services to tap the SME & MSME market segments.
+                  He has been on panel of various IT Initiatives as well like:
+                </p>
+                <ul>
+                  <li>
+                    Member National committee for ecommerce- CII (3rd year in a
+                    row)
+                  </li>
+                  <li>TiE Bangalore Chapter Member/Speaker</li>
+                  <li>Member- ISACA Pune Chapter</li>
+                  <li>
+                    Practioning Master at School of Advance Computing, Masters
+                    Union
+                  </li>
+                  <li>
+                    Advisory Board Member (Global Blockchain Committee)-
+                    EC-Council
+                  </li>
+                  <li>Member DSCI Chapter, Pune</li>
+                  <li>
+                    Board of Governance- GV Pula Reddy University- Hyderabad
+                  </li>
+                </ul>
+
+                <p>
+                  He is also passionate to work & nurture the startup ecosystem.
+                  He is lead Investor at CIO Angel Network (CAN) & work with
+                  many angel networks in India. He is also associated with
+                  various angel networks & communities across India & also
+                  actively mentoring startups in his portfolio. Have almost got
+                  12+ startups under his portfolio as Investor across B2b
+                  domains. He is currently on board of:
+                </p>
+                <ul class="num">
+                  <li>Technical Mentor & Advisor – India Accelerator</li>
+                  <li>Technology Advisor- Spanache VC, Singapore</li>
+                  <li>Lead Investor- CIO Angel Network</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="executive-team">
+            <h1>Executive Team</h1>
+            <div class="item">
+              <div class="image">
+                <img src="./images/img/paras-dotel-300x300.jpg" alt="" />
+              </div>
+              <div class="info">
+                <div class="name">Paras Dotel</div>
+                <p>
+                  Paras Dotel is full time faculty member and Head of Innovation
+                  Lab Manager at Presidential Business School. Having marketing
+                  background he has worked in various organisation leading
+                  marketing department. Currently, at Innovation Lab he works on
+                  enhancing the skills and entrepreneurial mindset of students
+                  and provide them with various workshop and training programs.
+                  He has been associated with various colleges taking Marketing
+                  and Strategic Management classes since 2016.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="./images/img/bibek-300x300.jpg" alt="" />
+              </div>
+              <div class="info">
+                <div class="name">Sanjeev Agrawal</div>
+                <p>
+                  Bibek is a Certified Professional Sales Leader (CPSL) from the
+                  National Association of Sales Professionals USA. He is the Co-
+                  Founder at Ascendifly and Founding Member at Sales Hacker Inc
+                  USA. Has over 10 years of experience in the sales and
+                  marketing with a demonstrated history of working in Banking
+                  and Finance, Human Resource, Media, Investment and Consulting
+                  sectors both globally and locally. A core Sales & Marketing
+                  professional, he understands the processes and brings forward
+                  simple tools to enhance productivity. His experiences of
+                  completing direct business Consulting and Training services
+                  for companies help in bringing the business perspectives
+                  across functionalities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faculty-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>

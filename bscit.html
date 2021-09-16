@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="./images/logo/logo.png" alt="" />
+          </div>
+          <div class="login">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="chairman.html">Chairman</a>
+                  </li>
+
+                  <li>
+                    <a href="our-teams.html">Our Teams</a>
+                  </li>
+
+                  <li>
+                    <a href="governing.html">Governing</a>
+                  </li>
+                </ul>
+              </i>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bba.html">BBA</a></li>
+                    <li><a href="mba.html">MBA</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <li><a href="bscit.html">BScIT</a></li>
+                    <li><a href="mcsit.html">MScIT</a></li>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li>
+                  <a href="approvals.html">Approvals</a>
+                </li>
+
+                <li>
+                  <a href="downloads.html">Downloads</a>
+                </li>
+
+                <li>
+                  <a href="faq.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/about-bscit.jpeg)"
+    >
+      <div class="page-title">
+        <h1>About BScIT</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> BScIT
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- about-mba-start -->
+    <section>
+      <div class="wrapper">
+        <div class="about-mba">
+          <div class="title">
+            <h4>Bachelor</h4>
+            <h2>
+              Bachelors of Science in Information <br />
+              Technology (BSc IT)
+            </h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bscit1.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">BScIT Philosophy</h2>
+                <p>
+                  BScIT is an interdisciplinary program that emphasizes IT and
+                  business development. The program produces determined, skilled
+                  and qualified human resources to solve real-life IT problems.
+                  The students, as IT practitioners, are trained to apply and
+                  explore the fundamental IT business development concepts with
+                  ethical and social awareness.
+                  <br />
+                  This 4-years, 120 credits BScIT degree is a high value
+                  investment. The program will allow our students to enter into
+                  the technologically advanced world where they will be engaged
+                  with various tasks allowing them to have an edge. This course
+                  will include designing, programming, knowledge on theoretical
+                  systems, networking and the like which are essential for
+                  getting into the advanced and dynamic IT sector. As IT has
+                  become part of every sector, this course will open a new path
+                  and career opportunities for anyone interested in pursuing it.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="details">
+                <h2 class="name">BScIT at Presidential</h2>
+                <p>
+                  Bachelor of Science in Information Technology (BScIT) at PBS
+                  is a four year bsc it course in nepal, 120 credit program
+                  designed to produce middle and supportive level IT
+                  practitioners. Accordingly, the program is a unique blend of
+                  Information Communication Technology (ICT) which covers a wide
+                  range of areas from its theoretical, mathematical and
+                  algorithms foundations to leading-edge developments in
+                  computer intelligent system, robotics, computer vision, system
+                  design and development, bioinformatics, and data-mining/data
+                  warehouse. Consequently, PBS firmly believes that the
+                  assortment of courses, offered in the program, will produce
+                  competent IT human resources that will not only cater to the
+                  need of both domestic and global markets but will also help IT
+                  practitioners to thrive both individually and professionally.
+
+                  <br />
+                  br Successively, the degree empowers the students to function
+                  in socioeconomic design and development applying the learned
+                  skill effectively. Besides, to hone their knowledge and
+                  skills, students will work independently in three distinct
+                  components as listed below:
+                </p>
+
+                <ul>
+                  <li>
+                    Develop effective methods to solve any types of computing
+                    problems
+                  </li>
+                  <li>
+                    Invent modern global ways to use computers in IT sectors
+                  </li>
+                  <li>
+                    Innovate, Design, Develop, and Implement software according
+                    to global trend
+                  </li>
+                </ul>
+                <p>
+                  Hence, this academic program provides students with a sound
+                  conceptual foundation and practical skills in various areas of
+                  ICT.
+                </p>
+              </div>
+
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bscit2.jpeg)"
+                ></div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <div
+                  class="img"
+                  style="background-image: url(./images/img/bscit3.jpeg)"
+                ></div>
+              </div>
+              <div class="details">
+                <h2 class="name">BScIT Program Learning Outcomes</h2>
+                <p>
+                  The Bachelor of Science in Information Technology offered by
+                  PBS in affiliation with Westcliff University encourages
+                  students to achieve the following educational outcomes:
+                </p>
+                <ul>
+                  <li>Evaluate current and emerging technologies.</li>
+                  <li>
+                    Identify and gather user requirements to design
+                    user-friendly interfaces.
+                  </li>
+                  <li>Apply, configure, and manage IT technologies</li>
+                  <li>
+                    Utilize data to help business gain insights to help them
+                    make better decisions.
+                  </li>
+                  <li>
+                    Access IT impact on individuals, organization, and the
+                    environment.
+                  </li>
+                  <li>
+                    Apply IT concepts and strategies to solve real world
+                    problem.
+                  </li>
+
+                  <li>
+                    Conduct research in the field of information technology and
+                    related fields.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="others-details">
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                Students with 12 years of schooling including High School
+                (SLC)/+2/A-Level or equivalent degree in any discipline from a
+                board of Nepal or from any other board across the globe
+                recognized by CDC of Government of Nepal with minimum score of
+                2.0 GPA or 45% or equivalent grade are eligible to apply for the
+                program. For A-Level graduate, 3.5 credit is required
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Duration:</div>
+              <p>MBA Course Duration in Nepal is 4 Years</p>
+            </div>
+
+            <div class="item">
+              <div class="name">Eligibility:</div>
+              <p>
+                Student must complete 120 prescribed credit hours with a
+                cumulative GPA of 2.0 or higher, including internship with
+                report submission.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="name">Concentration:</div>
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/BSCsit.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Software and Web Development:</strong> The main aim
+                  with this module is to provide the design and development
+                  tools, and technical skills and knowledge to the students for
+                  the development of quality software in accordance with global
+                  market trend.
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/BSCsit.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Network and Cyber Security:</strong> The main
+                  objective of PBS with this module is to teach network
+                  security, information security, security analysis and
+                  vulnerability assessment, digital forensic and cyber law to
+                  students.
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/BSCsit.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong
+                    >Machine Learning (AI) and Information Retrieval:</strong
+                  >
+                  Machine Learning is most rapidly growing in technological
+                  fields thereby facilitating the interaction of computer
+                  science and statistics with Artificial Intelligence and Data
+                  Science at its core.
+                </p>
+              </div>
+
+              <div class="desc">
+                <div class="image">
+                  <div
+                    class="img"
+                    style="background-image: url(./images/img/BSCsit.png)"
+                  ></div>
+                </div>
+                <p>
+                  <strong>Multimedia:</strong> The main aim of PBS is to produce
+                  skilled and specialized Human Resources in multimedia business
+                  markets. This specialization area focuses on multimedia
+                  industries.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-mba-end -->
+
+    <!-- mba-course-fee-start -->
+    <section>
+      <div class="wrapper">
+        <div class="mba-course-fee">
+          <div class="title">
+            <h4>Bachelor</h4>
+            <h2>BScIT Course Fee</h2>
+          </div>
+
+          <div class="section">
+            <div class="details">
+              <div class="item">
+                <div class="heading">BScIT Philosophy</div>
+                <p>
+                  BSIT is an interdisciplinary program that emphasizes IT
+                  business and development. The program provides determined,
+                  skilled and qualified human resources to solve the real-life
+                  IT problems. The students, as an IT practitioner, are trained
+                  to apply and explore the fundamental IT business development
+                  concept with ethical and social awareness.
+                </p>
+              </div>
+
+              <div class="item">
+                <div class="heading">BScIT AT PRESIDENTIAL</div>
+                <p>
+                  The PBS MBA conceived primarily to suit the need of the
+                  working professionals is a 2 years, 60-credit program
+                  structured to allow enough flexibility for (working) students.
+                  Equally competitive with the existent full-time courses within
+                  the domestic curricula from diverse national universities,
+                  this Westcliff University degree offered by PBS is an
+                  internationally-recognized degree, which is hybrid in nature.
+                  While it adheres to a global standard of curriculum to garner
+                  international recognition, it also integrates local business/
+                  managerial values to produce human resources that cater to the
+                  need of the domestic market in addition to the international
+                  one.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="course-fee-enquire">
+                <h2>Course Fee Enquire</h2>
+                <form action="">
+                  <div class="group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" name="" id="fullname" />
+                  </div>
+
+                  <div class="group">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="text" name="" id="phone" />
+                  </div>
+
+                  <div class="group">
+                    <label for="Concentration">Concentration *</label>
+                    <select name="" id="Concentration">
+                      <option value="mba-organizational">
+                        MBA Organizational
+                      </option>
+                      <option value="mba-entrepreneurship">
+                        MBA Entrepreneurship
+                      </option>
+                      <option value="mba-marketing">MBA Marketing</option>
+                      <option value="mba-financial-management">
+                        MBA Financial Management
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="group">
+                    <label for="eamil">Email</label>
+                    <input type="email" name="" id="eamil" />
+                  </div>
+
+                  <div class="group">
+                    <label for="message">Message *</label>
+                    <textarea
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+
+                  <button>Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- mba-course-fee-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>
