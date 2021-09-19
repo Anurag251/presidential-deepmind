@@ -1432,6 +1432,11 @@ footer
       padding: 2rem
       padding-top: 9rem
 
+      &:hover
+        .image
+          .img
+            transform: translateX(0) scale(1)
+
       .image
         position: absolute
         left: 50%
@@ -1446,7 +1451,7 @@ footer
           height: 100%
           width: 100%
           @include image
-          transform: scale(1.1)
+          transform: translateX(-30px) scale(1.2)
           @include trans()
 
       .details
@@ -1644,3 +1649,193 @@ footer
         @include button($color: $pri)
         font-size: 18px
         padding: .7rem 2rem
+
+/*********************      approvals      ***********************/
+.approvals
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      .image
+        border: 1px solid #A9A9A9
+        border-bottom: 0
+      img
+        width: 100%
+
+      .details
+        padding: 1rem
+        background-color: #F2F2F2
+        color: $dark
+        border: 1px solid #A9A9A9
+
+        .name
+          font-size: 18px
+
+/*********************      download      ***********************/
+.download
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      border-radius: 30px
+      overflow: hidden
+      border: 2px solid $main
+      background-color: $main
+
+      &:hover
+        .image
+          .img
+            transform: scale(1.1)
+
+      .image
+        height: 300px
+        width: 100%
+        border-radius: 30px
+        overflow: hidden
+        position: relative
+        z-index: 2
+
+        .img
+          height: 100%
+          width: 100%
+          @include image()
+          @include trans()
+
+      .details
+        background-color: $light
+        padding: 4rem 1rem 1.2rem
+        border-radius: 30px
+        text-align: left
+        margin-top: -50px
+
+        h3
+          font-size: 24px
+          margin-bottom: 10px
+
+        h5
+          color: $para
+          font-size: 18px
+          font-weight: 500
+
+      button
+        text-align: center
+        font-size: 18px
+        color: $light
+        padding: .7rem
+        width: 100%
+        cursor: pointer
+
+/*********************      Accreditation      ***********************/
+.accrediation
+  .item
+    padding: 2rem
+    background: #FFFFFF
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25)
+    border-radius: 15px
+    margin-bottom: 2rem
+
+    .image
+      height: 80px
+      width: 150px
+      margin-bottom: 1rem
+
+      .img
+        height: 100%
+        width: 100%
+        @include image
+        background-size: contain
+
+    .dateils
+      h3
+        font-size: 24px
+        margin-bottom: .7rem
+
+      p
+        font-size: 18px
+        line-height: 2rem
+        color: $para
+
+/*********************      login-page      ***********************/
+.login-page
+  height: 100vh
+  width: 100%
+  @include image
+  @include flex($justify: center)
+
+  .login
+    @include flex($justify: center)
+    flex-direction: column
+    padding: 4rem
+    max-width: 600px
+    width: 100%
+    background: rgba($light, 0.85)
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+    backdrop-filter: blur(14px)
+    border-radius: 6px
+
+    .logo
+      height: 80px
+      width: 180px
+
+      img
+        width: 100%
+
+    .icon
+      height: 100px
+      width: 100px
+      margin: 1rem 0
+
+      img
+        height: 100%
+        width: 100%
+
+    h3
+      width: 100%
+      text-align: left
+      font-weight: 600
+      font-size: 24px
+      line-height: 41px
+      color: #313131
+      margin-bottom: 2rem
+
+    h6
+      font-family: Nunito
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 33px
+      text-align: center
+      margin: 1rem 0 2rem
+      color: $para
+
+    form
+      width: 100%
+
+      .group
+        position: relative
+        width: 100%
+        margin-bottom: 2rem
+
+        .form-input-label
+          position: absolute
+          left: 10px
+          top: 50%
+          transform: translateY(-50%)
+          font-size: 18px
+          @include trans()
+
+          &.shrink
+            top: 0%
+            font-size: 14px
+
+        input
+          padding: 1rem
+          width: 100%
+          border-bottom: 1px solid $dark
+          font-size: 18px
+
+      button
+        font-size: 18px
+        width: 100%
+        @include button($color: $main)
+        border-radius: 4px

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="login-page"
+      style="background-image: url(./images/img/login-bg.jpg)"
+    >
+      <div class="login">
+        <div class="logo">
+          <img src="./images/logo/pbs.svg" alt="" />
+        </div>
+        <div class="icon">
+          <img src="./images/icons/user.svg" alt="" />
+        </div>
+        <h3>Login as user</h3>
+        <form action="">
+          <div class="group">
+            <input
+              type="email"
+              name="email"
+              class="label-shrink"
+              onchange="getData(this)"
+              required
+            />
+            <label class="form-input-label" name="email">Email</label>
+          </div>
+
+          <div class="group">
+            <input
+              type="password"
+              name="password"
+              class="lable-shrink"
+              onchange="getData(this)"
+              required
+            />
+            <label class="form-input-label" name="password">Password</label>
+          </div>
+
+          <a href="#"><h6>Forgot yout password?</h6></a>
+
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- js -->
+
+    <script>
+      // const labelShrinks = document.querySelectorAll('.label-shrink');
+      // const label = document.querySelectorAll('.label');
+
+      // labelShrinks.forEach((labelShrink, idx) => {
+      //   labelShrink.addEventListener('click', () => {
+      //     label[idx].classList.add('shrink');
+      //   });
+      // });
+
+      // login-page
+      let formInputLabels = document.querySelectorAll('.form-input-label');
+
+      function getData(data) {
+        formInputLabels.forEach((formInputLabel) => {
+          let dataAttributeName = data.getAttribute('name');
+          let labelAttributeName = formInputLabel.getAttribute('name');
+
+          if (dataAttributeName === labelAttributeName) {
+            if (data.getAttribute('name') === dataAttributeName) {
+              data.value.length
+                ? formInputLabel.classList.add('shrink')
+                : formInputLabel.classList.remove('shrink');
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
