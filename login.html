@@ -26,9 +26,11 @@
       style="background-image: url(./images/img/login-bg.jpg)"
     >
       <div class="login">
-        <div class="logo">
-          <img src="./images/logo/pbs.svg" alt="" />
-        </div>
+        <a href="index.html">
+          <div class="logo">
+            <img src="./images/logo/pbs.svg" alt="" />
+          </div>
+        </a>
         <div class="icon">
           <img src="./images/icons/user.svg" alt="" />
         </div>
@@ -38,22 +40,22 @@
             <input
               type="email"
               name="email"
-              class="label-shrink"
+              class="form-input"
               onchange="getData(this)"
               required
             />
-            <label class="form-input-label" name="email">Email</label>
+            <label name="email" class="form-input-label">Email</label>
           </div>
 
           <div class="group">
             <input
               type="password"
               name="password"
-              class="lable-shrink"
+              class="form-input"
               onchange="getData(this)"
               required
             />
-            <label class="form-input-label" name="password">Password</label>
+            <label name="password" class="form-input-label">Password</label>
           </div>
 
           <a href="#"><h6>Forgot yout password?</h6></a>
@@ -64,34 +66,6 @@
     </div>
 
     <!-- js -->
-
-    <script>
-      // const labelShrinks = document.querySelectorAll('.label-shrink');
-      // const label = document.querySelectorAll('.label');
-
-      // labelShrinks.forEach((labelShrink, idx) => {
-      //   labelShrink.addEventListener('click', () => {
-      //     label[idx].classList.add('shrink');
-      //   });
-      // });
-
-      // login-page
-      let formInputLabels = document.querySelectorAll('.form-input-label');
-
-      function getData(data) {
-        formInputLabels.forEach((formInputLabel) => {
-          let dataAttributeName = data.getAttribute('name');
-          let labelAttributeName = formInputLabel.getAttribute('name');
-
-          if (dataAttributeName === labelAttributeName) {
-            if (data.getAttribute('name') === dataAttributeName) {
-              data.value.length
-                ? formInputLabel.classList.add('shrink')
-                : formInputLabel.classList.remove('shrink');
-            }
-          }
-        });
-      }
-    </script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
