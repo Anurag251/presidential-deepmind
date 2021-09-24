@@ -189,12 +189,22 @@ h5
   &:hover
     right: 0
 
+    span
+      max-width: 1000px
+      padding: 0 1rem 0 0
+      opacity: 1
+      overflow: visible
+
   span
     height: 60px
     @include flex($justify: center)
-    padding: 0 1rem 0 0
     background-color: $main
     color: $light
+    max-width: 0
+    overflow: hidden
+    padding: 0
+    opacity: 0
+    @include trans()
 
   .icon
     height: 60px
@@ -207,10 +217,6 @@ h5
 
 .side-call
   top: 100px
-  right: -210px
-
-.side-email
-  right: -195px
 
 /*********************      enquiry-form-popup      ***********************/
 .background
@@ -543,6 +549,7 @@ header
     button
       @include button($color: $main)
       text-transform: uppercase
+      font-size: 18px
 
 /*********************      cources      ***********************/
 .linear-bg
@@ -575,11 +582,7 @@ header
     .item
       @include flex($justify: center)
       flex-direction: column
-
-      &:hover
-        .image
-          .img
-            transform: scale(1.1)
+      overflow: hidden
 
       .image
         height: 230px
@@ -1961,7 +1964,7 @@ footer
         font-size: 16px;
         font-weight: 300
       
-
+/*********************      login-page      ***********************/
 .faq
   .list
     .item
@@ -2030,3 +2033,159 @@ footer
               margin: 0
               list-style: none
         
+/*********************      login-page      ***********************/
+.contact-page
+  @include grid($column: 1fr 2fr)
+  
+  .contact-info
+    .title
+      font-size: 30px
+      text-align: left
+      margin-bottom: 2rem
+
+    .list
+      .item
+        @include flex($justify: flex-start)
+        @include grid($column: 40px 1fr)
+        margin-bottom: 2rem
+
+        .icon
+          height: 40px
+          width: 40px
+          border-radius: 50%
+          border: 1px solid #bfbfbf
+          @include flex($justify: center)
+          
+          img
+            width: 50%
+
+        .details
+          .name
+            font-size: 18px
+
+          p
+            font-size: 15px
+            font-weight: 300
+            line-height: 1.5rem
+            color: $para
+
+  .contact-form
+    .title
+      font-size: 30px
+      text-align: left
+      margin-bottom: 2rem
+
+    .groups
+      @include grid($column: 1fr 1fr)
+
+    .group
+      position: relative
+      border-radius: 15px
+      border: 1px solid #bfbfbf
+      margin-bottom: 1.5rem
+
+      label
+        position: absolute
+        top: 0
+        left: 15px
+        transform: translateY(-50%)
+        font-size: 12px
+        background-color: $light
+        padding: .2rem .7rem
+        color: $para
+        border-radius: 20px
+
+      input, select, textarea
+        padding: .7rem 1rem .5rem
+        width: 100%
+        font-size: 18px
+
+    button
+      @include button($color: $main)
+      font-size: 18px
+      width: 100%
+      border-radius: 10px
+
+/*********************      gallery-popup      ***********************/
+.gallery-popup
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 100
+  @include flex($justify: center)
+  flex-direction: column
+  pointer-events: none
+  opacity: 0
+  @include trans()
+
+  &.active
+    opacity: 1
+    pointer-events: auto
+
+    .gallery-bg
+      opacity: 1
+
+    .gallery-images
+      transform: translateY(0) scale(1)
+
+  .gallery-bg
+    @include dark($opacity: .8)
+    opacity: 0
+    z-index: 1
+    transition: .4s
+
+  .close-gallery-btn
+    position: absolute
+    right: 30px
+    top: 30px
+    height: 30px
+    width: 30px
+    @include flex($justify: center)
+    cursor: pointer
+    z-index: 2
+    @include trans()
+
+    &:hover
+      transform: rotate(90deg)
+    
+    img
+      width: 100%
+
+  .title
+    position: relative
+    text-align: center
+    font-size: 30px
+    color: $light
+    z-index: 2
+
+  .gallery-images
+    position: relative
+    .gallery-images
+    transform: translateY(-200px) scale(.8)
+    @include trans()
+    transition-delay: .2s
+    width: 100%
+    z-index: 2
+
+    .swiper-button-next, .swiper-button-prev
+      color: $light
+      background-color: rgba($pri, .3)
+      padding: 2rem
+      border-radius: 50%
+      backdrop-filter: blur(4px)
+
+    .swiper-wrapper
+      padding: 1.5rem 0
+
+    .swiper-slide
+      height: 400px
+      width: 100%
+      @include image
+      transition: .4s ease-in-out
+
+      &.swiper-slide-active
+        transform: scale(1.1)
+      
+

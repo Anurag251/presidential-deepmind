@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="top-sec">
+          <div class="stay-connected">
+            <h3>Stay Connected</h3>
+            <div class="icons">
+              <a href="#"
+                ><div class="icon"><i class="fab fa-linkedin"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-facebook"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-twitter"></i></div
+              ></a>
+              <a href="#"
+                ><div class="icon"><i class="fab fa-instagram"></i></div
+              ></a>
+            </div>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="login">
+            <a href="login.html">
+              <button>Login</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sec">
+        <div class="wrapper">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="drop-down">
+              About
+              <i class="fas fa-chevron-down">
+                <ul class="drop">
+                  <a href="about-us.html">
+                    <li>About Us</li>
+                  </a>
+
+                  <a href="chairman.html">
+                    <li>Chairman</li>
+                  </a>
+
+                  <a href="our-teams.html">
+                    <li>Our Teams</li>
+                  </a>
+
+                  <a href="governing.html">
+                    <li>Governing</li>
+                  </a>
+                </ul>
+              </i>
+            </li>
+            <a href="service.html">
+              <li>Services</li>
+            </a>
+            <li class="drop-down">
+              School of Business
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <a href="bba.html"><li>BBA</li></a>
+                    <a href="mba.html"><li>MBA</li></a>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              School of Technology
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <li class="more-dropdown">
+                  Courses <i class="fas fa-chevron-right"></i>
+                  <ul class="drop-right">
+                    <a href="bscit.html"><li>BScIT</li></a>
+                    <a href="mscit.html"><li>MScIT</li></a>
+                  </ul>
+                </li>
+                <a href="faculty.html"><li>Faculty</li></a>
+              </ul>
+            </li>
+            <li class="drop-down">
+              Quick Links
+              <i class="fas fa-chevron-down"></i>
+              <ul class="drop">
+                <a href="approvals.html">
+                  <li>Approvals</li>
+                </a>
+
+                <a href="accrediation.html">
+                  <li>Accrediation</li>
+                </a>
+
+                <a href="downloads.html">
+                  <li>Downloads</li>
+                </a>
+
+                <a href="faq.html">
+                  <li>FAQ</li>
+                </a>
+
+                <a href="blog.html">
+                  <li>Blog</li>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <div class="background">
+      <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
+    </div>
+    <!-- enquiry-form-popup-start -->
+    <div class="enquiry-form-popup">
+      <div class="close-form">
+        <img src="./images/icons/close_big.svg" alt="" />
+      </div>
+      <div class="title">
+        <h3>Enquiry</h3>
+      </div>
+      <form action="">
+        <div class="group">
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="group">
+          <label for="Number">Mobile Number *</label>
+          <input type="number" id="Number" required />
+        </div>
+
+        <div class="group">
+          <label for="Faculty">Faculty *</label>
+          <select name="" id="Faculty">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+            <option value="bscit">BScIT</option>
+            <option value="mscit">MScIT</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- enquiry-form-popup-end -->
+
+    <!-- admission-open-start -->
+    <div class="admission-open">
+      <button class="admission-btn">
+        Admission Open <i class="fas fa-chevron-up"></i>
+      </button>
+      <ul class="list">
+        <li>
+          <div class="name">MScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">MBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BScIT</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+
+        <li>
+          <div class="name">BBA</div>
+          <a href="admission-form.html">
+            <button>Apply Now</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- admission-open-end -->
+
+    <!-- page-banner-start -->
+    <div
+      class="page-banner"
+      style="background-image: url(./images/img/page-banner.jpeg)"
+    >
+      <div class="page-title">
+        <h1>Contact</h1>
+        <h6>
+          <a href="index.html"> Home</a>
+          <i class="fas fa-chevron-right"></i> Contact
+        </h6>
+      </div>
+    </div>
+    <!-- page-banner-end -->
+
+    <!-- contact-page-start -->
+    <section>
+      <div class="wrapper">
+        <div class="contact-page">
+          <div class="contact-info">
+            <div class="title">Contact Info</div>
+            <div class="list">
+              <div class="item">
+                <div class="icon">
+                  <img src="./images/icons/location_outline.svg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Our Location</div>
+                  <p>Banshower, Kathmandu</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="icon">
+                  <img src="./images/icons/mail_open.svg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Email Address</div>
+                  <p>info@mydomain.com</p>
+                  <p>enquery@edu.com</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="icon">
+                  <img src="./images/icons/phone-orange.svg" alt="" />
+                </div>
+                <div class="details">
+                  <div class="name">Phone Number</div>
+                  <p>+977 9863762772</p>
+                  <p>+041 4324234</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div class="title">Get In Touch</div>
+            <form action="">
+              <div class="groups">
+                <div class="group">
+                  <label for="YourName">Name</label>
+                  <input type="text" id="YourName" required />
+                </div>
+
+                <div class="group">
+                  <label for="YourEmail">Email</label>
+                  <input type="text" id="YourEmail" required />
+                </div>
+              </div>
+
+              <div class="group">
+                <label for="Subj">Subject</label>
+                <input type="text" id="Subj" required />
+              </div>
+
+              <div class="group">
+                <label for="Mess">Name</label>
+                <textarea
+                  name=""
+                  id="Mess"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-page-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="list">
+          <div class="item">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Bhakti Thapa Sadak,
+                Thapagaun, New Baneshwors, Kathmandu 44600
+              </li>
+              <li><i class="fas fa-phone-alt"></i> 01-5244306, 01-5245006</li>
+              <li><i class="fas fa-envelope"></i> info@presidential.edu.np</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Become a Teacher</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Resources</h2>
+            <ul>
+              <li>Nanodegree Plus</li>
+              <li>Veterans</li>
+              <li>Georgia</li>
+              <li>Self-Driving Car</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Newsletter</h2>
+            <div class="details">
+              <p>You can trust us. we only send promo offers,</p>
+              <div class="group">
+                <form action="">
+                  <input
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                  <button>
+                    <img src="./images/icons/send-button.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2020 Presidential Business School.</div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- js -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/enquiry.js"></script>
+  </body>
+</html>
