@@ -522,7 +522,7 @@ header .wrapper .top-sec .login button:hover {
 
 header .nav-sec {
   padding: .5rem 0;
-  background-color: #000000;
+  background-color: #2e3191;
 }
 
 header .nav-sec .nav {
@@ -558,7 +558,7 @@ header .nav-sec .nav li {
 }
 
 header .nav-sec .nav li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 header .nav-sec .nav li:hover .drop {
@@ -573,7 +573,7 @@ header .nav-sec .nav li .drop {
   top: 70px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #000000;
+  background-color: #2e3191;
   padding: 1rem;
   z-index: 5;
   border-radius: 15px;
@@ -607,7 +607,7 @@ header .nav-sec .nav li .drop li.more-dropdown .drop-right {
   position: absolute;
   left: 170px;
   top: -16px;
-  background-color: #000000;
+  background-color: #2e3191;
   padding: 1rem;
   z-index: 5;
   border-radius: 15px;
