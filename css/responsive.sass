@@ -1,0 +1,198 @@
+$main: #f48120
+$pri: #2e3191
+$sec: #fbb016
+$bg: #f9f9ff
+$title: #373737
+$light: #ffffff
+$dark: #000000
+$para: #484848
+
+@mixin flex($justify)
+  display: flex
+  justify-content: $justify
+  align-items: center
+
+@mixin grid($column)
+  display: grid
+  grid-template-columns: $column
+  grid-gap: 20px
+
+@mixin dark($opacity)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba($dark, $opacity)
+
+@mixin image
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+@mixin trans()
+  transition: 0.45s cubic-bezier(0, 0, 0, 1),
+
+@mixin button($color)
+  padding: 0.5rem 1rem
+  background: none
+  color: $light
+  border: 1px solid $color
+  box-shadow: 0 0 0 3em $color inset
+  @include trans()
+  cursor: pointer
+
+  &:hover
+    box-shadow: 0 0 0 0em $color inset
+    color: $color
+
+@media only screen and (max-width: 1200px) 
+  .wrapper
+    max-width: 1000px
+
+  /*********************      about      ***********************/
+  .about
+    @include grid($column: 1fr 1fr)
+
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses
+    .list
+      @include grid($column: 1fr 1fr 1fr)
+
+      .item
+        margin-bottom: 1rem
+
+@media only screen and (max-width: 1000px)
+  h1
+    font-size: 30px
+
+  h2
+    font-size: 24px
+
+  h3
+    font-size: 18px
+  
+  h4
+    font-size: 16px
+
+  .wrapper
+    max-width: 800px
+
+  /*********************      banner      ***********************/
+  .banner
+    position: relative
+
+    .swiper-slide
+      height: 60vh
+  
+  /*********************      about      ***********************/
+  .about
+    @include grid($column: 1fr)
+
+    .image
+      height: 400px
+
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses
+    .list
+      @include grid($column: 1fr 1fr)
+
+  /************************   facilities  ************************/ 
+  .facilitiess
+    .list
+      @include grid($column: 1fr 1fr)
+
+  /*********************      news-events      ***********************/
+  .news-events
+    .list
+      @include grid($column: 1fr)
+
+  /*********************      footer      ***********************/
+  footer
+    .list
+      @include grid($column: 1.5fr 1fr 1fr)
+
+  /*********************      about-page      ***********************/
+  .about-page
+    @include grid($column: 1fr)
+
+  /*********************      learning-approaches & core-comperencies      ***********************/
+  .learning-approaches, .core-comperencies
+    .list
+      @include grid($column: 1fr 1fr 1fr)
+
+@media only screen and (max-width: 700px)
+  /*********************      cources      ***********************/
+  .cources
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      margin-bottom: 1rem
+
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses
+    .list
+      @include grid($column: 1fr 1fr)
+
+  /*********************      footer      ***********************/
+  footer
+    .list
+      @include grid($column: 1.5fr 1fr)
+
+      .item
+
+        &:nth-child(4)
+          grid-area: 2
+
+@media only screen and (max-width: 600px)
+  /*********************      cources      ***********************/
+  .cources
+    @include grid($column: 1fr 1fr)
+
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses
+    .list
+      @include grid($column: 1fr)
+
+  /************************   facilities  ************************/ 
+  .facilitiess
+    .list
+      @include grid($column: 1fr)
+
+  /*********************      footer      ***********************/
+  footer
+    .list
+      @include grid($column: 1fr)
+
+      .item
+        margin-bottom: 1rem 
+
+        &:nth-child(4)
+          grid-area: 2
+
+        h2
+          margin-bottom: 1rem
+
+  /*********************      page-banner      ***********************/
+  .page-banner
+    height: 400px
+
+@media only screen and (max-width: 500px)
+  h1
+    font-size: 24px
+
+  h2
+    font-size: 20px
+
+  /*********************      cources      ***********************/
+  .cources
+    @include grid($column: 1fr)
+
+  /*********************      partner      ***********************/
+  .partner
+    @include grid($column: 1fr)
+
+  /*********************      learning-approaches & core-comperencies      ***********************/
+  .learning-approaches, .core-comperencies
+    .list
+      @include grid($column: 1fr 1fr)

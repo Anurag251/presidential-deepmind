@@ -1,1 +1,225 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+  /*********************      about      ***********************/
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .our-popular-courses .list .item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .wrapper {
+    max-width: 800px;
+  }
+  /*********************      banner      ***********************/
+  .banner {
+    position: relative;
+  }
+  .banner .swiper-slide {
+    height: 60vh;
+  }
+  /*********************      about      ***********************/
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .about .image {
+    height: 400px;
+  }
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /************************   facilities  ************************/
+  .facilitiess .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      news-events      ***********************/
+  .news-events .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      footer      ***********************/
+  footer .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      about-page      ***********************/
+  .about-page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      learning-approaches & core-comperencies      ***********************/
+  .learning-approaches .list, .core-comperencies .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /*********************      cources      ***********************/
+  .cources {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .cources .item {
+    margin-bottom: 1rem;
+  }
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      footer      ***********************/
+  footer .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    grid-gap: 20px;
+  }
+  footer .list .item:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-area: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*********************      cources      ***********************/
+  .cources {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      our-popular-courses      ***********************/
+  .our-popular-courses .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /************************   facilities  ************************/
+  .facilitiess .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      footer      ***********************/
+  footer .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  footer .list .item {
+    margin-bottom: 1rem;
+  }
+  footer .list .item:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-area: 2;
+  }
+  footer .list .item h2 {
+    margin-bottom: 1rem;
+  }
+  /*********************      page-banner      ***********************/
+  .page-banner {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  /*********************      cources      ***********************/
+  .cources {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      partner      ***********************/
+  .partner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  /*********************      learning-approaches & core-comperencies      ***********************/
+  .learning-approaches .list, .core-comperencies .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -821,15 +821,11 @@ header .nav-sec .nav li a {
 }
 
 .cources {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .cources .item {
@@ -911,7 +907,145 @@ header .nav-sec .nav li a {
   font-weight: 700;
 }
 
-/*********************      facilities      ***********************/
+/************************   facilities  ************************/
+.facilitiess .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.facilitiess .list .item {
+  position: relative;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.facilitiess .list .item:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f48120), to(#2e3191));
+  background: linear-gradient(0deg, #f48120, #2e3191);
+  -webkit-transition: 0.45s cubic-bezier(0, 0, 0, 1);
+  transition: 0.45s cubic-bezier(0, 0, 0, 1);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.facilitiess .list .item:nth-child(1):after {
+  top: 0;
+  left: 0;
+}
+
+.facilitiess .list .item:nth-child(2):after {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.facilitiess .list .item:nth-child(3):after {
+  top: 0;
+  right: 0;
+}
+
+.facilitiess .list .item:nth-child(4):after {
+  bottom: 0;
+  left: 0;
+}
+
+.facilitiess .list .item:nth-child(5):after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.facilitiess .list .item:nth-child(6):after {
+  bottom: 0;
+  right: 0;
+}
+
+.facilitiess .list .item:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.facilitiess .list .item:hover .details {
+  color: #ffffff;
+}
+
+.facilitiess .list .item:hover .details .icon {
+  background: #ffffff;
+}
+
+.facilitiess .list .item:hover .details .icon img.dark-icon {
+  display: block;
+}
+
+.facilitiess .list .item:hover .details .icon img.light-icon {
+  display: none;
+}
+
+.facilitiess .list .item .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 2;
+  color: #000000;
+}
+
+.facilitiess .list .item .details .icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f48120), to(#2e3191));
+  background: linear-gradient(0deg, #f48120, #2e3191);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facilitiess .list .item .details .icon img {
+  width: 50%;
+}
+
+.facilitiess .list .item .details .icon img.dark-icon {
+  display: none;
+}
+
+.facilitiess .list .item .details .icon img.light-icon {
+  display: block;
+}
+
+.facilitiess .list .item .details h3 {
+  font-size: 24px;
+  margin: 1.5rem 0 .5rem;
+}
+
 /*********************      news-events      ***********************/
 .news-events .switch-btn {
   display: -webkit-box;
@@ -1294,9 +1428,10 @@ header .nav-sec .nav li a {
           align-items: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  padding: 2rem 0;
 }
 
 .partner .title {
@@ -1304,7 +1439,14 @@ header .nav-sec .nav li a {
   margin: 0;
 }
 
+.partner .client-logo {
+  width: 100%;
+  overflow: hidden;
+}
+
 .partner .swiper-slide {
+  padding: 1rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1317,8 +1459,8 @@ header .nav-sec .nav li a {
 }
 
 .partner .swiper-slide .image {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1328,6 +1470,9 @@ header .nav-sec .nav li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .partner .swiper-slide .image img {
@@ -3269,144 +3414,5 @@ footer .list .item .details .group input {
 .gallery-popup .gallery-images .swiper-slide.swiper-slide-active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-/************************   facilities  ************************/
-.facilitiess .list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.facilitiess .list .item {
-  position: relative;
-  padding: 2rem 1rem;
-  text-align: center;
-  background-color: #ffffff;
-  border-radius: 15px;
-  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-}
-
-.facilitiess .list .item:after {
-  position: absolute;
-  content: '';
-  height: 0;
-  width: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f48120), to(#2e3191));
-  background: linear-gradient(0deg, #f48120, #2e3191);
-  -webkit-transition: 0.45s cubic-bezier(0, 0, 0, 1);
-  transition: 0.45s cubic-bezier(0, 0, 0, 1);
-  z-index: 1;
-  border-radius: 15px;
-}
-
-.facilitiess .list .item:nth-child(1):after {
-  top: 0;
-  left: 0;
-}
-
-.facilitiess .list .item:nth-child(2):after {
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.facilitiess .list .item:nth-child(3):after {
-  top: 0;
-  right: 0;
-}
-
-.facilitiess .list .item:nth-child(4):after {
-  bottom: 0;
-  left: 0;
-}
-
-.facilitiess .list .item:nth-child(5):after {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.facilitiess .list .item:nth-child(6):after {
-  bottom: 0;
-  right: 0;
-}
-
-.facilitiess .list .item:hover:after {
-  height: 100%;
-  width: 100%;
-}
-
-.facilitiess .list .item:hover .details {
-  color: #ffffff;
-}
-
-.facilitiess .list .item:hover .details .icon {
-  background: #ffffff;
-}
-
-.facilitiess .list .item:hover .details .icon img.dark-icon {
-  display: block;
-}
-
-.facilitiess .list .item:hover .details .icon img.light-icon {
-  display: none;
-}
-
-.facilitiess .list .item .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  z-index: 2;
-  color: #000000;
-}
-
-.facilitiess .list .item .details .icon {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f48120), to(#2e3191));
-  background: linear-gradient(0deg, #f48120, #2e3191);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.facilitiess .list .item .details .icon img {
-  width: 50%;
-}
-
-.facilitiess .list .item .details .icon img.dark-icon {
-  display: none;
-}
-
-.facilitiess .list .item .details .icon img.light-icon {
-  display: block;
-}
-
-.facilitiess .list .item .details h3 {
-  font-size: 24px;
-  margin: 1.5rem 0 .5rem;
 }
 /*# sourceMappingURL=styles.css.map */

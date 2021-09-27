@@ -555,7 +555,8 @@ header
   background: linear-gradient(93.04deg, rgba(46, 49, 145, 0.7) 0%, rgba(244, 129, 32, 0.7) 100%)
 
 .cources
-  @include flex($justify: space-between)
+  @include grid($column: 1fr 1fr 1fr 1fr)
+  
 
   .item
     @include flex($justify: center)
@@ -599,41 +600,106 @@ header
         margin-top: 1rem
         font-weight: 700
 
-/*********************      facilities      ***********************/
-// .facilities
-//   .list
-//     @include grid($column: 1fr 1fr 1fr)
-//     margin-top: 8rem
+/************************   facilities  ************************/ 
+.facilitiess
+  .list
+    @include grid($column: 1fr 1fr 1fr)
 
-//     .item
-//       background-color: $pri
-//       border-radius: 17px
-//       box-shadow: 0px 4px 4px rgba($dark, 0.25)
-//       height: 200px
-//       width: 100%
-//       position: relative
-//       margin-bottom: 4rem
-//       @include flex($justify: center)
+    .item
+      position: relative
+      padding: 2rem 1rem
+      text-align: center
+      background-color: $light
+      border-radius: 15px
+      box-shadow: 4px 4px 20px rgba($dark, .05)
+      overflow: hidden
 
-//       .icon
-//         position: absolute
-//         top: 0
-//         left: 50%
-//         transform: translate(-50%, -50%)
-//         height: 120px
-//         width: 120px
-//         border-radius: 50%
-//         background-color: $pri
-//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-//         @include flex($justify: center)
+      &:after
+        position: absolute
+        content: ''
+        height: 0
+        width: 0
+        background: linear-gradient(0deg, $main, $pri)
+        @include trans()
+        z-index: 1
+        border-radius: 15px
 
-//         img
-//           width: 50%
+      &:nth-child(1)
+        &:after
+          top: 0
+          left: 0
 
-//       .name
-//         color: $light
-//         margin-top: 2.5rem
-//         font-size: 30px
+      &:nth-child(2)
+        &:after
+          top: 0
+          left: 0
+          width: 100%
+
+      &:nth-child(3)
+        &:after
+          top: 0
+          right: 0
+
+      &:nth-child(4)
+        &:after
+          bottom: 0
+          left: 0
+
+      &:nth-child(5)
+        &:after
+          bottom: 0
+          left: 0
+          width: 100%
+
+      &:nth-child(6)
+        &:after
+          bottom: 0
+          right: 0
+
+      &:hover
+        &:after
+          height: 100%
+          width: 100%
+
+        .details
+          color: $light
+
+          .icon
+            background: $light
+
+            img
+              &.dark-icon
+                display: block
+
+              &.light-icon
+                display: none
+
+      .details
+        @include flex($justify: center)
+        flex-direction: column
+        position: relative
+        z-index: 2
+        color: $dark
+
+        .icon
+          height: 80px
+          width: 80px
+          border-radius: 50%
+          background: linear-gradient(0deg, $main, $pri)
+          @include flex($justify: center)
+
+          img
+            width: 50%
+
+            &.dark-icon
+              display: none
+
+            &.light-icon
+              display: block
+
+        h3
+          font-size: 24px
+          margin: 1.5rem 0 .5rem
 
 /*********************      news-events      ***********************/
 .news-events
@@ -902,19 +968,28 @@ header
 /*********************      partner      ***********************/
 .partner
   @include flex($justify: flex-start)
-  @include grid($column: 1fr  2fr)
+  @include grid($column: 1fr  1fr)
+  padding: 2rem 0
 
   .title
     text-align: left
     margin: 0
 
+  .client-logo
+    width: 100%
+    overflow: hidden
+
   .swiper-slide
+    padding: 1rem
+    width: 100%
     @include flex($justify: center)
 
     .image
-      height: 200px
-      width: 200px
+      height: 150px
+      width: 150px
       @include flex($justify: center)
+      box-shadow: 0 0 20px rgba($dark, .1)
+      border-radius: 15px
 
       img
         width: 80%
@@ -2194,104 +2269,3 @@ footer
       &.swiper-slide-active
         transform: scale(1.1)
       
-
-/************************   facilities  ************************/ 
-.facilitiess
-  .list
-    @include grid($column: 1fr 1fr 1fr)
-
-    .item
-      position: relative
-      padding: 2rem 1rem
-      text-align: center
-      background-color: $light
-      border-radius: 15px
-      box-shadow: 4px 4px 20px rgba($dark, .05)
-      overflow: hidden
-
-      &:after
-        position: absolute
-        content: ''
-        height: 0
-        width: 0
-        background: linear-gradient(0deg, $main, $pri)
-        @include trans()
-        z-index: 1
-        border-radius: 15px
-
-      &:nth-child(1)
-        &:after
-          top: 0
-          left: 0
-
-      &:nth-child(2)
-        &:after
-          top: 0
-          left: 0
-          width: 100%
-
-      &:nth-child(3)
-        &:after
-          top: 0
-          right: 0
-
-      &:nth-child(4)
-        &:after
-          bottom: 0
-          left: 0
-
-      &:nth-child(5)
-        &:after
-          bottom: 0
-          left: 0
-          width: 100%
-
-      &:nth-child(6)
-        &:after
-          bottom: 0
-          right: 0
-
-      &:hover
-        &:after
-          height: 100%
-          width: 100%
-
-        .details
-          color: $light
-
-          .icon
-            background: $light
-
-            img
-              &.dark-icon
-                display: block
-
-              &.light-icon
-                display: none
-
-      .details
-        @include flex($justify: center)
-        flex-direction: column
-        position: relative
-        z-index: 2
-        color: $dark
-
-        .icon
-          height: 80px
-          width: 80px
-          border-radius: 50%
-          background: linear-gradient(0deg, $main, $pri)
-          @include flex($justify: center)
-
-          img
-            width: 50%
-
-            &.dark-icon
-              display: none
-
-            &.light-icon
-              display: block
-
-        h3
-          font-size: 24px
-          margin: 1.5rem 0 .5rem

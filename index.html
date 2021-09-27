@@ -1073,13 +1073,14 @@
     <!-- our-location-end -->
 
     <!-- partner-start -->
-    <section>
-      <div class="wrapper">
-        <div class="partner">
-          <div class="title">
-            <h4>Our Partners</h4>
-            <h2>Our internship and placement partners</h2>
-          </div>
+    <div class="wrapper">
+      <div class="partner">
+        <div class="title">
+          <h4>Our Partners</h4>
+          <h2>Our internship and placement partners</h2>
+        </div>
+
+        <div class="client-logo">
           <div class="swiper-container mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -1103,7 +1104,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- partner-end -->
 
     <div class="gallery-popup">
@@ -1238,7 +1239,7 @@
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1024: {
+          1150: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
@@ -1276,9 +1277,12 @@
       var swiper = new Swiper(".partner .mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
+        loop: true,
+
         autoplay: {
           delay: 3000,
         },
+
         breakpoints: {
           640: {
             slidesPerView: 1,
