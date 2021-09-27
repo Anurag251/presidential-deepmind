@@ -601,40 +601,40 @@ header
         font-weight: 700
 
 /*********************      facilities      ***********************/
-.facilities
-  .list
-    @include grid($column: 1fr 1fr 1fr)
-    margin-top: 8rem
+// .facilities
+//   .list
+//     @include grid($column: 1fr 1fr 1fr)
+//     margin-top: 8rem
 
-    .item
-      background-color: $pri
-      border-radius: 17px
-      box-shadow: 0px 4px 4px rgba($dark, 0.25)
-      height: 200px
-      width: 100%
-      position: relative
-      margin-bottom: 4rem
-      @include flex($justify: center)
+//     .item
+//       background-color: $pri
+//       border-radius: 17px
+//       box-shadow: 0px 4px 4px rgba($dark, 0.25)
+//       height: 200px
+//       width: 100%
+//       position: relative
+//       margin-bottom: 4rem
+//       @include flex($justify: center)
 
-      .icon
-        position: absolute
-        top: 0
-        left: 50%
-        transform: translate(-50%, -50%)
-        height: 120px
-        width: 120px
-        border-radius: 50%
-        background-color: $pri
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        @include flex($justify: center)
+//       .icon
+//         position: absolute
+//         top: 0
+//         left: 50%
+//         transform: translate(-50%, -50%)
+//         height: 120px
+//         width: 120px
+//         border-radius: 50%
+//         background-color: $pri
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+//         @include flex($justify: center)
 
-        img
-          width: 50%
+//         img
+//           width: 50%
 
-      .name
-        color: $light
-        margin-top: 2.5rem
-        font-size: 30px
+//       .name
+//         color: $light
+//         margin-top: 2.5rem
+//         font-size: 30px
 
 /*********************      news-events      ***********************/
 .news-events
@@ -736,6 +736,7 @@ header
 
 /*********************      testimonials      ***********************/
 .testimonials
+  
   .swiper-pagination
     .swiper-pagination-bullet
       height: 12px
@@ -901,8 +902,12 @@ header
 
 /*********************      partner      ***********************/
 .partner
-  .mySwiper
-    margin-top: 5rem
+  @include flex($justify: flex-start)
+  @include grid($column: 1fr  2fr)
+
+  .title
+    text-align: left
+    margin: 0
 
   .swiper-slide
     @include flex($justify: center)
@@ -913,7 +918,7 @@ header
       @include flex($justify: center)
 
       img
-        width: 100%
+        width: 80%
 
 /*********************      footer      ***********************/
 footer
@@ -1377,6 +1382,8 @@ footer
 
       &:hover
         .image
+          border-radius: 15px
+          
           .img
             transform: scale(1.1)
 
@@ -2189,3 +2196,103 @@ footer
         transform: scale(1.1)
       
 
+/************************   facilities  ************************/ 
+.facilitiess
+  .list
+    @include grid($column: 1fr 1fr 1fr)
+
+    .item
+      position: relative
+      padding: 2rem 1rem
+      text-align: center
+      background-color: $light
+      border-radius: 15px
+      box-shadow: 4px 4px 20px rgba($dark, .05)
+      overflow: hidden
+
+      &:after
+        position: absolute
+        content: ''
+        height: 0
+        width: 0
+        background: linear-gradient(0deg, $main, $pri)
+        @include trans()
+        z-index: 1
+        border-radius: 15px
+
+      &:nth-child(1)
+        &:after
+          top: 0
+          left: 0
+
+      &:nth-child(2)
+        &:after
+          top: 0
+          left: 0
+          width: 100%
+
+      &:nth-child(3)
+        &:after
+          top: 0
+          right: 0
+
+      &:nth-child(4)
+        &:after
+          bottom: 0
+          left: 0
+
+      &:nth-child(5)
+        &:after
+          bottom: 0
+          left: 0
+          width: 100%
+
+      &:nth-child(6)
+        &:after
+          bottom: 0
+          right: 0
+
+      &:hover
+        &:after
+          height: 100%
+          width: 100%
+
+        .details
+          color: $light
+
+          .icon
+            background: $light
+
+            img
+              &.dark-icon
+                display: block
+
+              &.light-icon
+                display: none
+
+      .details
+        @include flex($justify: center)
+        flex-direction: column
+        position: relative
+        z-index: 2
+        color: $dark
+
+        .icon
+          height: 80px
+          width: 80px
+          border-radius: 50%
+          background: linear-gradient(0deg, $main, $pri)
+          @include flex($justify: center)
+
+          img
+            width: 50%
+
+            &.dark-icon
+              display: none
+
+            &.light-icon
+              display: block
+
+        h3
+          font-size: 24px
+          margin: 1.5rem 0 .5rem
