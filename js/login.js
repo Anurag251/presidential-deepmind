@@ -1,4 +1,5 @@
 let formInputLabels = document.querySelectorAll(".form-input-label");
+const goBackBtn = document.querySelector(".back-btn");
 
 function getData(data) {
   formInputLabels.forEach((formInputLabel) => {
@@ -14,3 +15,7 @@ function getData(data) {
     }
   });
 }
+
+goBackBtn.addEventListener("click", () => {
+  history.back();
+});

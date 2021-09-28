@@ -1,28 +1,30 @@
-const enquiryFormPopup = document.querySelector('.enquiry-form-popup');
-const closeForm = document.querySelector('.close-form');
-const enquirybtn = document.querySelector('.enquiry');
-const background = document.querySelector('.background');
-const mouse = document.querySelector('.cursor-close');
+const enquiryFormPopup = document.querySelector(".enquiry-form-popup");
+const closeForm = document.querySelector(".close-form");
+const enquirybtn = document.querySelectorAll("#enquiry");
+const background = document.querySelector(".background");
+const mouse = document.querySelector(".cursor-close");
 
-enquirybtn.addEventListener('click', () => {
-  enquiryFormPopup.classList.add('active');
-  background.classList.add('active');
+enquirybtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    enquiryFormPopup.classList.toggle("active");
+    background.classList.toggle("active");
+  });
 });
 
-closeForm.addEventListener('click', () => {
-  enquiryFormPopup.classList.remove('active');
-  background.classList.remove('active');
+closeForm.addEventListener("click", () => {
+  enquiryFormPopup.classList.remove("active");
+  background.classList.remove("active");
 });
 
-background.addEventListener('click', () => {
-  enquiryFormPopup.classList.remove('active');
-  background.classList.remove('active');
+background.addEventListener("click", () => {
+  enquiryFormPopup.classList.remove("active");
+  background.classList.remove("active");
 });
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener("mousemove", (e) => {
   let x = e.x;
   let y = e.y;
 
-  mouse.style.top = y + 'px';
-  mouse.style.left = x + 'px';
+  mouse.style.top = y + "px";
+  mouse.style.left = x + "px";
 });

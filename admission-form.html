@@ -57,7 +57,9 @@
       <div class="nav-sec">
         <div class="wrapper">
           <ul class="nav">
-            <li><a href="index.html">Home</a></li>
+            <a href="index.html">
+              <li>Home</li>
+            </a>
             <li class="drop-down">
               About
               <i class="fas fa-chevron-down">
@@ -142,6 +144,123 @@
     </header>
     <!-- header-end -->
 
+    <div class="mobile-header">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./images/logo/pbs.svg" alt="" />
+        </div>
+        <div class="side-nav-btn">
+          <div class="bars"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-nav">
+      <div class="side-nav-logo">
+        <div class="logo">
+          <img src="./images/logo/pbs.svg" alt="" />
+        </div>
+        <div class="side-nav-close-btn">
+          <img src="./images/icons/close_big_light.svg" alt="" />
+        </div>
+      </div>
+
+      <ul class="side-nav-bar">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+
+        <li class="side-nav-drop-btn">
+          <span>About <i class="fas fa-chevron-down"></i></span>
+
+          <ul class="side-nav-drop">
+            <a href="about-us.html">
+              <li>About Us</li>
+            </a>
+            <a href="chairman.html">
+              <li>Chairman</li>
+            </a>
+            <a href="our-teams.html">
+              <li>Our Teams</li>
+            </a>
+            <a href="governing.html">
+              <li>Governing</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="side-nav-drop-btn">
+          <span>School of Business <i class="fas fa-chevron-down"></i></span>
+
+          <ul class="side-nav-drop">
+            <a href="bba.html">
+              <li>BBA</li>
+            </a>
+            <a href="mba.html">
+              <li>MBA</li>
+            </a>
+            <a href="faculty.html">
+              <li>Faculty</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="side-nav-drop-btn">
+          <span>School of Technology <i class="fas fa-chevron-down"></i></span>
+
+          <ul class="side-nav-drop">
+            <a href="bscit.html">
+              <li>BScIT</li>
+            </a>
+            <a href="mscit.html">
+              <li>MScIT</li>
+            </a>
+            <a href="faculty.html">
+              <li>Faculty</li>
+            </a>
+          </ul>
+        </li>
+
+        <a href="service.html">
+          <li>Services</li>
+        </a>
+
+        <li class="side-nav-drop-btn">
+          <span>Quick Links <i class="fas fa-chevron-down"></i></span>
+
+          <ul class="side-nav-drop">
+            <a href="approvals.html">
+              <li>Approvals</li>
+            </a>
+
+            <a href="accrediation.html">
+              <li>Accrediation</li>
+            </a>
+
+            <a href="downloads.html">
+              <li>Downloads</li>
+            </a>
+
+            <a href="faq.html">
+              <li>FAQ</li>
+            </a>
+
+            <a href="blog.html">
+              <li>Blog</li>
+            </a>
+
+            <a href="contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </li>
+
+        <a href="login.html">
+          <li>Login</li>
+        </a>
+      </ul>
+    </div>
+
     <div class="background">
       <img class="cursor-close" src="./images/icons/shadow-close.svg" alt="" />
     </div>
@@ -191,7 +310,7 @@
 
     <!-- admission-open-start -->
     <div class="admission-open">
-      <button class="admission-btn">
+      <button class="admission-btn" id="admission-btn">
         Admission Open <i class="fas fa-chevron-up"></i>
       </button>
       <ul class="list">
@@ -669,6 +788,22 @@
       <div class="copyright">© 2020 Presidential Business School.</div>
     </footer>
     <!-- footer-end -->
+
+    <div class="mobile-navigate-btns">
+      <div class="icon">
+        <a href="#">
+          <img src="./images/icons/home.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="icon" id="admission-btn">
+        <img src="./images/icons/admission.svg" alt="" />
+      </div>
+
+      <div class="icon" id="enquiry">
+        <img src="./images/icons/speech-bubble-with-question-mark.svg" alt="" />
+      </div>
+    </div>
 
     <!-- js -->
     <script src="./js/nav.js"></script>
