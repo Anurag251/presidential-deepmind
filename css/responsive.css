@@ -68,7 +68,7 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  header, .enquiry, .side-email, .side-call {
+  .desktop-nav, .enquiry, .side-email, .side-call {
     display: none;
   }
   .admission-open .admission-btn {
